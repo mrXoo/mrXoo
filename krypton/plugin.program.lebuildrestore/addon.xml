@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.program.lebuildrestore" name="[COLOR lime]LibreELEC Build Restore[/COLOR]" version="1.8" provider-name="MR ED REPO">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.addon.common" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">LibreELEC Build Restore</summary>
+    <description lang="en">LibreELEC Build Restore will get you a fresh install of my build.</description>
+    <platform>all</platform>
+  </extension>
+</addon>

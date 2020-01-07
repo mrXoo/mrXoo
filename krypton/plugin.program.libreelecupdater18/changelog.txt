@@ -1,0 +1,26 @@
+[B]Version 1.11[/B] 
+Forked from Ember Updater.
+[B]Version 1.12[/B] 
+Made updating build fully automatic.
+[B]Version 1.13[/B] 
+Minor fix.
+[B]Version 1.14[/B] 
+Removed Keymaps icon. Keymaps are in UPDATE BUILD now.
+[B]Version 1.15[/B] 
+Added GUI FIX to home screen.
+[B]Version 1.16[/B] 
+Simplified Internal update screen.
+[B]Version 1.17[/B] 
+Krypton compatible.
+[B]Version 1.18[/B] 
+Minor fix.
+[B]Version 1.19[/B] 
+Added Netflix Dialog Box.
+[B]Version 1.20[/B] 
+Automatic Updating after info box.
+[B]Version 1.21[/B] 
+added Notifications boxes.
+[B]Version 1.22[/B] 
+plugin.program.buildrestore edited to plugin.program.lebuildrestore.
+[B]Version 1.23[/B] 
+plugin.video.buildrestore edited to plugin.program.lebuildrestore.

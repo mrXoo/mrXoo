@@ -1,0 +1,7 @@
+[B]Version 1.0[/B] Initial version forked.
+[B]Version 1.1[/B] Minor Fix.
+[B]Version 1.2[/B] URL change.
+[B]Version 1.3[/B] Added notification boxes.
+[B]Version 1.4[/B] URL change.
+[B]Version 1.5[/B] Added TX7 Box.
+[B]Version 1.6[/B] Fix TX7 link.

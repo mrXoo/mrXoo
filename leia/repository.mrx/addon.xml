@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.mrx" name="[COLOR lime]MR X[/COLOR]" version="0.0.1" provider-name="">
+    <requires>
+        <import addon="xbmc.addon" version="17.0.0"/>
+    </requires>
+    <extension point="xbmc.addon.repository"
+        name="X">
+        <dir minversion="17.0.0">
+            <info compressed="false">https://raw.githubusercontent.com/mrXoo/mrXoo/master/krypton/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/mrXoo/mrXoo/master/krypton/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/mrXoo/mrXoo/master/krypton/</datadir>
+        </dir>
+        <dir minversion="18.0.0">
+            <info compressed="false">https://raw.githubusercontent.com/mrXoo/mrXoo/master/leia/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/mrXoo/mrXoo/master/leia/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/mrXoo/mrXoo/master/leia/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+    </extension>
+</addon>
+

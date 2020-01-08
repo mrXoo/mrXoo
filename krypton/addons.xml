@@ -15,7 +15,7 @@
   </extension>
 </addon>
 
-<addon id="script.addon.importer.linux" name="[COLOR lime]Addon Importer[/COLOR]" version="18.8.0e" provider-name="X">
+<addon id="script.addon.importer.linux" name="[COLOR lime]Addon Importer[/COLOR]" version="18.8.0f" provider-name="X">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="plugin.video.exodusredux" />
@@ -334,9 +334,6 @@ provider-name="primaeval">
 </addon>
 
 <addon id="repository.mrx" name="[COLOR lime]MR X[/COLOR]" version="0.0.1" provider-name="">
-    <requires>
-        <import addon="xbmc.addon" version="17.0.0"/>
-    </requires>
     <extension point="xbmc.addon.repository"
         name="X">
         <dir minversion="17.0.0">

@@ -1,4 +1,0 @@
-[B]Version 2.0[/B]
-- Initial version
-[B]Version 2.1[/B]
-- Change URL.

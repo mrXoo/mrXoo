@@ -1,6 +1,0 @@
-[B]Version 1.0[/B] Initial version forked.
-[B]Version 1.1[/B] Minor Fix.
-[B]Version 1.2[/B] URL Update.
-[B]Version 1.3[/B] Added remember wifi.
-[B]Version 1.4[/B] Added lite build.
-[B]Version 1.5[/B] Updated DB URL's.

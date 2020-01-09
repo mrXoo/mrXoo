@@ -173,7 +173,7 @@ Thanks to all Devs who have contributed to this project!</description>
 
 <addon id="plugin.video.gehosting"
        name="[COLOR lime]Global IPTV[/COLOR]"
-       version="6.1.1"
+       version="6.1.2"
        provider-name="Global">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>

@@ -1,5 +1,5 @@
 <addons>
-<addon id="plugin.program.addoncleaner" name="[COLOR lime]Addon Cleaner[/COLOR]" version="1.56.4" provider-name="X">
+<addon id="plugin.program.addoncleaner" name="[COLOR lime]Addon Cleaner[/COLOR]" version="1.57.0" provider-name="X">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -15,13 +15,14 @@
   </extension>
 </addon>
 
-<addon id="script.addon.importer.linux" name="[COLOR lime]Addon Importer[/COLOR]" version="18.8.0f" provider-name="X">
+<addon id="script.addon.importer.linux" name="[COLOR lime]Addon Importer[/COLOR]" version="18.9.0" provider-name="X">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="plugin.video.exodusredux" />
     <import addon="plugin.video.themagicdragon" />
     <import addon="script.pinsentry" />
     <import addon="plugin.video.numbersbynumbers" />
+    <import addon="plugin.video.thecrew" />	
   </requires>
   <extension point="xbmc.python.pluginsource" library="service.py">
         <provides></provides>
@@ -34,7 +35,7 @@
   </extension>
 </addon>
 
-<addon id="script.repo.importer" name="[COLOR lime]Repo Importer[/COLOR]" version="18.8.1" provider-name="X">
+<addon id="script.repo.importer" name="[COLOR lime]Repo Importer[/COLOR]" version="18.9.0" provider-name="X">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>

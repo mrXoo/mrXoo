@@ -219,7 +219,7 @@ provider-name="primaeval">
 </extension>
 </addon>
 
-<addon id="plugin.video.insanityv2" name="Insanity" version="0.1.3" provider-name="SteevieGee">
+<addon id="plugin.video.insanityv2" name="Insanity" version="0.1.4" provider-name="SteevieGee">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.requests" />
@@ -236,7 +236,7 @@ provider-name="primaeval">
   </extension>
 </addon>
 
-<addon id="plugin.video.nhlstreams" name="[COLOR lime]NHL Streams[/COLOR]" version="2.1.6" provider-name="MR ED REPO">
+<addon id="plugin.video.nhlstreams" name="[COLOR lime]NHL Streams[/COLOR]" version="2.2.0" provider-name="MR ED REPO">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.pytz" version="2014.2"/>
@@ -534,7 +534,7 @@ Thanks to all Devs who have contributed to this project!</description>
   </extension>
 </addon>
 
-<addon id="video.lazyman.nhl.tv" name="[COLOR lime]LazyMan NHL.tv[/COLOR]" version="2.0.2" provider-name="X">
+<addon id="video.lazyman.nhl.tv" name="[COLOR lime]LazyMan NHL.tv[/COLOR]" version="2.0.3" provider-name="X">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.requests" version="2.9.1"/>

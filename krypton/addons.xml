@@ -236,7 +236,7 @@ provider-name="primaeval">
   </extension>
 </addon>
 
-<addon id="plugin.video.nhlstreams" name="[COLOR lime]NHL Streams[/COLOR]" version="2.2.0" provider-name="MR ED REPO">
+<addon id="plugin.video.nhlstreams" name="[COLOR lime]NHL Streams[/COLOR]" version="2.2.1" provider-name="MR ED REPO">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.pytz" version="2014.2"/>

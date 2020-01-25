@@ -1,5 +1,5 @@
 <addons>
-<addon id="plugin.program.addoncleaner" name="[COLOR lime]Addon Cleaner[/COLOR]" version="1.57.0" provider-name="X">
+<addon id="plugin.program.addoncleaner" name="[COLOR lime]Addon Cleaner[/COLOR]" version="1.57.1" provider-name="X">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -15,7 +15,7 @@
   </extension>
 </addon>
 
-<addon id="script.addon.importer.linux" name="[COLOR lime]Addon Importer[/COLOR]" version="18.9.0" provider-name="X">
+<addon id="script.addon.importer.linux" name="[COLOR lime]Addon Importer[/COLOR]" version="18.9.1" provider-name="X">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="plugin.video.exodusredux" />

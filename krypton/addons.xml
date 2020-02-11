@@ -82,6 +82,21 @@ Thanks to all Devs who have contributed to this project!</description>
   </extension>
 </addon>
 
+<addon id="plugin.program.movieorshow" name="[COLOR lime][B]MOVIE OR TV?[/B][/COLOR]" version="1.0.1" provider-name="X">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable video</provides>
+  </extension>
+  <extension point="xbmc.service" library="default.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Movie or Show chooser</summary>
+    <description lang="en"></description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.program.skinchangeradvanced" name="[COLOR lime][B]A SKIN CHANGER[/B][/COLOR]" version="1.7" provider-name="X">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>

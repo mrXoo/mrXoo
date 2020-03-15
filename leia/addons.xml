@@ -21,6 +21,25 @@
     </extension>
 </addon>
 
+<addon id="script.addon.importer.linux" name="[COLOR lime]Addon Importer[/COLOR]" version="19.9.3" provider-name="X">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="plugin.video.exodusredux" />
+    <import addon="plugin.video.themagicdragon" />
+    <import addon="plugin.video.numbersbynumbers" />
+    <import addon="plugin.video.thecrew" />	
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="service.py">
+        <provides></provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Addon Importer</summary>
+    <description lang="en"></description>
+    <platform>linux</platform>
+  </extension>
+</addon>
+
 <addon id="script.extendedinfo" name="[COLOR lime]Extended Info [/COLOR]" version="401.0.0" provider-name="original work by phil65">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>

@@ -21,7 +21,7 @@
     </extension>
 </addon>
 
-<addon id="script.addon.importer.linux" name="[COLOR lime]Addon Importer[/COLOR]" version="19.9.5b" provider-name="X">
+<addon id="script.addon.importer.linux" name="[COLOR lime]Addon Importer[/COLOR]" version="19.9.5c" provider-name="X">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="plugin.video.exodusredux" />

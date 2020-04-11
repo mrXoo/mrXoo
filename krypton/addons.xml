@@ -15,7 +15,7 @@
   </extension>
 </addon>
 
-<addon id="script.addon.importer.linux" name="[COLOR lime]Addon Importer[/COLOR]" version="18.9.5c" provider-name="X">
+<addon id="script.addon.importer.linux" name="[COLOR lime]Addon Importer[/COLOR]" version="18.9.6" provider-name="X">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="plugin.video.exodusredux" />
@@ -171,7 +171,7 @@ Thanks to all Devs who have contributed to this project!</description>
 
 </addon>
 
-<addon id="plugin.program.vadercenter" name="[COLOR lime]Paid TV Setup[/COLOR]" version="1.18" provider-name="X">
+<addon id="plugin.program.vadercenter" name="[COLOR lime]Paid TV Setup[/COLOR]" version="1.19" provider-name="X">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.addon.common" />
@@ -185,6 +185,27 @@ Thanks to all Devs who have contributed to this project!</description>
     <description lang="en"></description>
     <platform>all</platform>
   </extension>
+</addon>
+
+<addon id="plugin.video.addon.recorder"
+version="0.0.30"
+name="Addon Recorder"
+provider-name="primaeval">
+<requires>
+  <import addon="xbmc.python" version="2.20.0"/>
+  <import addon="script.module.xbmcswift2" version="2.4.0"/>
+  <import addon="script.module.requests" version="2.9.1" />
+  <import addon="script.module.futures"  />
+</requires>
+<extension point="xbmc.python.pluginsource" library="main.py">
+  <provides>video</provides>
+</extension>
+<extension point="xbmc.service" library="service.py" start="login"/>
+<extension point="xbmc.addon.metadata">
+  <summary lang="en">PVR Recorder for Addon Streams</summary>
+  <description lang="en">Record from Addon Streams on a Timer. Requires ffmpeg. Add Rule with python regexes.</description>
+  <disclaimer lang="en">Make sure you have legal permission to record from the creators.</disclaimer>
+</extension>
 </addon>
 
 <addon id="plugin.video.gehosting"
@@ -350,6 +371,24 @@ provider-name="primaeval">
   <description lang="en"></description>
   <disclaimer lang="en"></disclaimer>
 </extension>
+</addon>
+
+<addon id="plugin.video.tvobv1" name="[COLOR lime]TV Only Better[/COLOR]" version="1.0.1" provider-name="X">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests" />
+    <import addon="plugin.video.addon.recorder"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">TVOB Addon</summary>
+    <language>en</language>
+    <description lang="en">VOD</description>
+     <platform>all</platform>
+  </extension>
 </addon>
 
 <addon id="plugin.video.vodv1" name="[COLOR lime]Video On Demand[/COLOR]" version="1.0.5b" provider-name="X">

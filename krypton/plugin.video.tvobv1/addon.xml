@@ -1,0 +1,18 @@
+<?xml version="1.1" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.tvobv1" name="[COLOR lime]TV Only Better[/COLOR]" version="1.0.1" provider-name="X">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests" />
+    <import addon="plugin.video.addon.recorder"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">TVOB Addon</summary>
+    <language>en</language>
+    <description lang="en">VOD</description>
+     <platform>all</platform>
+  </extension>
+</addon>

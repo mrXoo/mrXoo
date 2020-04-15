@@ -188,7 +188,7 @@ Thanks to all Devs who have contributed to this project!</description>
 </addon>
 
 <addon id="plugin.video.addon.recorder"
-version="0.0.30"
+version="0.0.31"
 name="Addon Recorder"
 provider-name="primaeval">
 <requires>

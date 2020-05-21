@@ -255,7 +255,7 @@ provider-name="primaeval">
 </extension>
 </addon>
 
-<addon id="plugin.video.insanityv2" name="Insanity" version="0.1.5" provider-name="SteevieGee">
+<addon id="plugin.video.insanityv2" name="Insanity" version="0.1.6" provider-name="SteevieGee">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.requests" />

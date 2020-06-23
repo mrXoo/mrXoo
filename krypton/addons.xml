@@ -210,7 +210,7 @@ provider-name="primaeval">
 
 <addon id="plugin.video.gehosting"
        name="[COLOR lime]Global IPTV[/COLOR]"
-       version="6.1.4"
+       version="6.1.5"
        provider-name="Global">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -253,23 +253,6 @@ provider-name="primaeval">
   <description lang="en"></description>
   <disclaimer lang="en">.</disclaimer>
 </extension>
-</addon>
-
-<addon id="plugin.video.insanityv2" name="Insanity" version="0.1.6" provider-name="SteevieGee">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.requests" />
-  </requires>
-  <extension point="xbmc.python.pluginsource"
-            library="default.py">
-        <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Insanity Addon</summary>
-    <language>en</language>
-    <description lang="en">IPTV</description>
-     <platform>all</platform>
-  </extension>
 </addon>
 
 <addon id="plugin.video.nhlstreams" name="[COLOR lime]NHL Streams[/COLOR]" version="2.2.3" provider-name="X">

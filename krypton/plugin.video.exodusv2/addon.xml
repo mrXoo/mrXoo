@@ -1,5 +1,5 @@
 <?xml version="1.1" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.exodusv2" name="[COLOR lime]Exodus IPTV[/COLOR]" version="6.0.1" provider-name="SteevieGee">
+<addon id="plugin.video.exodusv2" name="[COLOR lime]Exodus IPTV[/COLOR]" version="6.0.1a" provider-name="SteevieGee">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.requests" />

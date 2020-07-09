@@ -208,7 +208,7 @@ provider-name="primaeval">
 </extension>
 </addon>
 
-<addon id="plugin.video.exodusv2" name="[COLOR lime]Exodus IPTV[/COLOR]" version="6.0.1a" provider-name="SteevieGee">
+<addon id="plugin.video.exodusv2" name="[COLOR lime]Exodus IPTV[/COLOR]" version="6.0.2" provider-name="SteevieGee">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.requests" />

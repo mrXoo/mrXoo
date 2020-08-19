@@ -370,7 +370,7 @@ provider-name="primaeval">
   </extension>
 </addon>
 
-<addon id="plugin.video.vodv1" name="[COLOR lime]Video On Demand[/COLOR]" version="1.0.5c" provider-name="X">
+<addon id="plugin.video.vodv1" name="[COLOR lime]Video On Demand[/COLOR]" version="1.0.6" provider-name="X">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.requests" />

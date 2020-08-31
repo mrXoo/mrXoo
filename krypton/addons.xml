@@ -251,7 +251,7 @@ provider-name="primaeval">
 </extension>
 </addon>
 
-<addon id="plugin.video.nhlstreams" name="[COLOR lime]NHL Streams[/COLOR]" version="2.2.4" provider-name="X">
+<addon id="plugin.video.nhlstreams" name="[COLOR lime]NHL Streams[/COLOR]" version="2.2.5" provider-name="X">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.pytz" version="2014.2"/>
@@ -593,7 +593,7 @@ Thanks to all Devs who have contributed to this project!</description>
   </extension>
 </addon>
 
-<addon id="video.lazyman.nhl.tv" name="[COLOR lime]LazyMan NHL.tv[/COLOR]" version="2.0.7" provider-name="X">
+<addon id="video.lazyman.nhl.tv" name="[COLOR lime]LazyMan NHL.tv[/COLOR]" version="2.0.8" provider-name="X">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.requests" version="2.9.1"/>

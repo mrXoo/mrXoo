@@ -171,7 +171,7 @@ Thanks to all Devs who have contributed to this project!</description>
 
 </addon>
 
-<addon id="plugin.program.vadercenter" name="[COLOR lime]Paid TV Setup[/COLOR]" version="1.26a" provider-name="X">
+<addon id="plugin.program.vadercenter" name="[COLOR lime]Paid TV Setup[/COLOR]" version="1.26b" provider-name="X">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.addon.common" />

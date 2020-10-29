@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.program.vadercenter" name="[COLOR lime]Paid TV Setup[/COLOR]" version="1.25" provider-name="X">
+<addon id="plugin.program.vadercenter" name="[COLOR lime]Paid TV Setup[/COLOR]" version="1.24" provider-name="X">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.addon.common" />

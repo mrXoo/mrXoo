@@ -15,7 +15,7 @@
   </extension>
 </addon>
 
-<addon id="script.addon.importer.linux" name="[COLOR lime]Addon Importer[/COLOR]" version="18.9.7c" provider-name="X">
+<addon id="script.addon.importer.linux" name="[COLOR lime]Addon Importer[/COLOR]" version="18.9.8" provider-name="X">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="plugin.video.exodusredux" />
@@ -249,6 +249,25 @@ provider-name="primaeval">
   <description lang="en"></description>
   <disclaimer lang="en">.</disclaimer>
 </extension>
+</addon>
+
+<addon id="plugin.video.kemo" name="[COLOR lime]kemo IPTV[/COLOR]" version="0.0.1" provider-name="X">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests" />
+	<import addon="pvr.iptvsimple" />
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">KEMO Addon</summary>
+    <language>en</language>
+    <description lang="en">IPTV and VOD</description>
+     <platform>all</platform>
+  </extension>
 </addon>
 
 <addon id="plugin.video.nhlstreams" name="[COLOR lime]NHL Streams[/COLOR]" version="2.2.5" provider-name="X">

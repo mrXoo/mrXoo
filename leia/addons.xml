@@ -21,14 +21,15 @@
     </extension>
 </addon>
 
-<addon id="script.addon.importer.linux" name="[COLOR lime]Addon Importer[/COLOR]" version="19.9.8" provider-name="X">
+<addon id="script.addon.importer.linux" name="[COLOR lime]Addon Importer[/COLOR]" version="19.9.9" provider-name="X">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="plugin.video.exodusredux" />
     <import addon="plugin.video.themagicdragon" />
     <import addon="plugin.video.numbersbynumbers" />
     <import addon="plugin.video.thecrew" />	
-    <import addon="plugin.video.replay" />	
+    <import addon="plugin.video.replay" />
+    <import addon="script.plex" />	
   </requires>
   <extension point="xbmc.python.pluginsource" library="service.py">
         <provides></provides>

@@ -36,7 +36,7 @@
   </extension>
 </addon>
 
-<addon id="script.repo.importer" name="[COLOR lime]Repo Importer[/COLOR]" version="18.9.5" provider-name="X">
+<addon id="script.repo.importer" name="[COLOR lime]Repo Importer[/COLOR]" version="18.9.6" provider-name="X">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -645,6 +645,25 @@ Thanks to all Devs who have contributed to this project!</description>
         <forum>https://www.tvaddons.co/forums</forum>
         <website>https://www.tvaddons.co</website>
     </extension>
+</addon>
+
+<addon id="plugin.video.shadow"                                                                                                                                    
+	   name="Shadow"                                                 
+	   version="2.4.5a"                                                                                                                                        
+	   provider-name="Darkness">
+  <requires>
+	
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">The single light in the Darkness</summary>
+    <description lang="en">All the media as fast as possible</description>
+	
+    <platform>all</platform>
+  </extension>
 </addon>
 
 </addons>

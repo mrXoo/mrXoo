@@ -15,12 +15,11 @@
   </extension>
 </addon>
 
-<addon id="script.addon.importer.linux" name="[COLOR lime]Addon Importer[/COLOR]" version="18.9.9" provider-name="X">
+<addon id="script.addon.importer.linux" name="[COLOR lime]Addon Importer[/COLOR]" version="18.9.10" provider-name="X">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="plugin.video.exodusredux" />
     <import addon="plugin.video.themagicdragon" />
-    <import addon="plugin.video.numbersbynumbers" />
     <import addon="plugin.video.thecrew" />	
     <import addon="plugin.video.replay" />
     <import addon="script.plex" />
@@ -78,21 +77,6 @@ Thanks to all Devs who have contributed to this project!</description>
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">LibreELEC Updater</summary>
-    <description lang="en"></description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="plugin.program.movieorshow" name="[COLOR lime][B]MOVIE OR TV?[/B][/COLOR]" version="1.0.1" provider-name="X">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>executable video</provides>
-  </extension>
-  <extension point="xbmc.service" library="default.py" start="startup" />
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Movie or Show chooser</summary>
     <description lang="en"></description>
     <platform>all</platform>
   </extension>
@@ -228,29 +212,7 @@ provider-name="primaeval">
   </extension>
 </addon>
 
-<addon id="plugin.video.imdb.watchlists"
-version="0.0.42"
-name="IMDb Watchlists"
-provider-name="primaeval">
-<requires>
-  <import addon="xbmc.python" version="2.20.0"/>
-  <import addon="script.module.xbmcswift2" version="2.4.0"/>
-  <import addon="script.module.requests" version="2.9.1" />
-  <import addon="script.module.trakt" version="2.5.1"/>
-  <import addon="script.imdb.watchlist.settings" version="0.0.2"/>
-</requires>
-<extension point="xbmc.python.pluginsource" library="main.py">
-  <provides>video</provides>
-</extension>
-<extension point="xbmc.service"
-  library="service.py" start="startup">
-</extension>
-<extension point="xbmc.addon.metadata">
-  <summary lang="en">IMDb Watchlists</summary>
-  <description lang="en"></description>
-  <disclaimer lang="en">.</disclaimer>
-</extension>
-</addon>
+
 
 <addon id="plugin.video.kemo" name="[COLOR lime]kemo IPTV[/COLOR]" version="0.0.1" provider-name="X">
   <requires>
@@ -375,11 +337,10 @@ provider-name="primaeval">
 </extension>
 </addon>
 
-<addon id="plugin.video.tvobv1" name="[COLOR lime]TV Only Better[/COLOR]" version="1.0.2a" provider-name="X">
+<addon id="plugin.video.tvobv1" name="[COLOR lime]TV Only Better[/COLOR]" version="1.0.2b" provider-name="X">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.requests" />
-    <import addon="plugin.video.addon.recorder"/>
   </requires>
   <extension point="xbmc.python.pluginsource"
             library="default.py">
@@ -460,98 +421,6 @@ Major code changes is in the works for the next version of OpenInfo(v.7.0.0) whi
 	</extension>
 </addon>
 
-<addon id="script.god" name="[COLOR lime]GOD[/COLOR]" version="1.9" provider-name="">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.addon.common" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.service" library="service.py" start="startup" />
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en"></summary>
-    <description lang="en"></description>
-    <platform>linux windows</platform>
-  </extension>
-</addon>
-
-<addon id="script.imdb.watchlist.settings" name="[COLOR lime]IMDb Watchlist Settings[/COLOR]" version="0.0.3" provider-name="X">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="service.py">
-        <provides></provides>
-  </extension>
-  <extension point="xbmc.service" library="service.py" start="startup" />
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en"></summary>
-    <description lang="en"></description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="script.librarybackup"
-    name="[COLOR lime]Library Backup[/COLOR]" version="1.0.13" provider-name="X">
-  <requires>
-	<!-- jarvis -->
-    <import addon="xbmc.python" version="2.24.0"/>
-    <import addon="script.module.httplib2" version="0.8.0" />
-    <import addon="script.module.oauth2client" version="1.4.7" />
-    <import addon="script.module.uritemplate" version="0.6" />
-    <import addon="script.module.yaml" version="3.11"/>
-    <import addon="script.module.googleapi" version="1.4.2" />
-	<import addon="script.module.requests" version="2.9.1" />
-  </requires>
-  <extension point="xbmc.python.script" library="default.py"> 
-     <provides>executable</provides> 
-  </extension> 
-  <extension point="xbmc.service" library="scheduler.py" start="startup" />
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Backup and restore your Kodi library, IMDb data and Watched List files in the event of a crash or file corruption.</summary>
-    <summary lang="en_NZ">Backup and restore your Kodi library, IMDb data and Watched List files in the event of a crash or file corruption.</summary>
-    <summary lang="en_US">Backup and restore your Kodi library, IMDb data and Watched List files in the event of a crash or file corruption.</summary>
-	<description lang="en">Ever hosed your Kodi setup and wished you'd had your library and Watched status backed up? Now you can with one easy click. You can export your library, IMDb watch list, and watched list status to any source writeable by Kodi or directly to Dropbox cloud storage. Backups can be run on demand or via a scheduler. </description>
-    <description lang="en_NZ">Ever hosed your Kodi setup and wished you'd had your library and Watched status backed up? Now you can with one easy click. You can export your library, IMDb watch list, and watched list status to any source writeable by Kodi or directly to Dropbox cloud storage. Backups can be run on demand or via a scheduler. </description>
-    <description lang="en_US">Ever hosed your Kodi setup and wished you'd had your library and Watched status backed up? Now you can with one easy click. You can export your library, IMDb watch list, and watched list status to any source writeable by Kodi or directly to Dropbox cloud storage. Backups can be run on demand or via a scheduler. </description>
-    <language></language>
-    <platform>all</platform>
-    <license>The MIT License</license>
-    <forum></forum>
-    <source></source>
-  </extension>
-</addon>
-
-<addon id="script.loguploader" name="[COLOR lime]Log Uploader[/COLOR]" version="1.2" provider-name="X">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Upload you log</summary>
-    <description lang="en"></description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="script.repo.importerrpi" name="[COLOR lime]Repo Importer RPi[/COLOR]" version="0.0.1" provider-name="X">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="service.py">
-    <provides></provides>
-  </extension>
-  <extension point="xbmc.service" library="service.py" start="startup">
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Repo Importer</summary>
-    <description lang="en">Import new repos automatically.
-Thanks to all Devs who have contributed to this project!</description>
-    <platform>all</platform>
-  </extension>
-</addon>
 
 <addon
   id="skin.xonfluence"
@@ -624,28 +493,7 @@ Thanks to all Devs who have contributed to this project!</description>
   </extension>
 </addon>
 
-<addon id="script.module.urlresolver" name="URLResolver" version="5.0.47a" provider-name="tvaddons">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0" />
-        <import addon="plugin.video.youtube" optional="true" />
-        <import addon="script.module.python.twitch" optional="true" />
-        <import addon="script.module.cryptopy" version="1.2.6" optional="true" />
-        <import addon="plugin.video.gdrive" optional="true" />
-    </requires>
-    <extension point="xbmc.python.module" library="lib" />
-    <extension point="xbmc.python.pluginsource" library="lib/default.py" />
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-        <summary lang="en">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
-        <summary lang="es">Resolver enlaces a videos de sitios populares para poder reproducirlos en XBMC/Kodi.</summary>
-        <summary lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju.</summary>
-        <summary lang="el">Επίλυση συνδέσμων κοινών εξυπηρετητών σε μορφή βίντεο ικανό για αναπαραγωγή στο XBMC/Kodi.</summary>
-        <description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
-        <description lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju, pojednostavnjuje razvoj priključaka za video dodatke koji zahtjevaju višestruke video izvore.</description>
-        <forum>https://www.tvaddons.co/forums</forum>
-        <website>https://www.tvaddons.co</website>
-    </extension>
-</addon>
+
 
 <addon id="plugin.video.shadow"                                                                                                                                    
 	   name="Shadow"                                                 

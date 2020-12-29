@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.program.skinchangeradvanced" name="[COLOR lime][B]A SKIN CHANGER[/B][/COLOR]" version="1.9" provider-name="MR ED REPO">
+<addon id="plugin.program.skinchangeradvanced" name="[COLOR lime][B]A SKIN CHANGER[/B][/COLOR]" version="1.10.0" provider-name="MR ED REPO">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.addon.importer.linux" />
+	<import addon="script.repo.importer" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>executable video</provides>

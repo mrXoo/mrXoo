@@ -82,9 +82,11 @@ Thanks to all Devs who have contributed to this project!</description>
   </extension>
 </addon>
 
-<addon id="plugin.program.skinchangeradvanced" name="[COLOR lime][B]A SKIN CHANGER[/B][/COLOR]" version="1.9" provider-name="X">
+<addon id="plugin.program.skinchangeradvanced" name="[COLOR lime][B]A SKIN CHANGER[/B][/COLOR]" version="1.10.0" provider-name="MR ED REPO">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.addon.importer.linux" />
+	<import addon="script.repo.importer" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>executable video</provides>
@@ -96,6 +98,7 @@ Thanks to all Devs who have contributed to this project!</description>
     <platform>all</platform>
   </extension>
 </addon>
+
 
 <addon id="plugin.program.super.favourites" name="[COLOR lime]Super Favourites[/COLOR]" version="1.0.59a" provider-name="spoyser">
   <requires>

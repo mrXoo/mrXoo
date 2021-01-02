@@ -196,7 +196,7 @@ provider-name="primaeval">
 </extension>
 </addon>
 
-<addon id="plugin.video.exodusv2" name="[COLOR lime]Exodus IPTV[/COLOR]" version="7.0.1" provider-name="SteevieGee">
+<addon id="plugin.video.exodusv2" name="[COLOR lime]Exodus IPTV[/COLOR]" version="7.0.2" provider-name="SteevieGee">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.requests" />
@@ -340,7 +340,7 @@ provider-name="primaeval">
 </extension>
 </addon>
 
-<addon id="plugin.video.tvobv1" name="[COLOR lime]TV Only Better[/COLOR]" version="1.0.2b" provider-name="X">
+<addon id="plugin.video.tvobv1" name="[COLOR lime]TV Only Better[/COLOR]" version="1.0.3" provider-name="X">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.requests" />

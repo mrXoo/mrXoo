@@ -23,7 +23,7 @@ provider-name="primaeval">
 </addon>
 
 <addon id="plugin.video.themoviedb.helper"
-version="4.2.10"
+version="4.2.10a"
 name="TheMovieDb Helper"
 provider-name="jurialmunkey">
 <requires>

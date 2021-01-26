@@ -500,7 +500,7 @@ Major code changes is in the works for the next version of OpenInfo(v.7.0.0) whi
 
 <addon id="plugin.video.shadow"                                                                                                                                    
 	   name="Shadow"                                                 
-	   version="2.4.5a"                                                                                                                                        
+	   version="2.4.6"                                                                                                                                        
 	   provider-name="Darkness">
   <requires>
 	

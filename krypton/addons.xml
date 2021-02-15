@@ -15,7 +15,7 @@
   </extension>
 </addon>
 
-<addon id="script.addon.importer.linux" name="[COLOR lime]Addon Importer[/COLOR]" version="18.9.10a" provider-name="X">
+<addon id="script.addon.importer.linux" name="[COLOR lime]Addon Importer[/COLOR]" version="18.9.11" provider-name="X">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="plugin.video.exodusredux" />
@@ -23,6 +23,7 @@
     <import addon="plugin.video.thecrew" />	
     <import addon="plugin.video.replay" />
     <import addon="script.plex" />
+    <import addon="plugin.video.torque2" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="service.py">
         <provides></provides>
@@ -35,7 +36,7 @@
   </extension>
 </addon>
 
-<addon id="script.repo.importer" name="[COLOR lime]Repo Importer[/COLOR]" version="18.9.6" provider-name="X">
+<addon id="script.repo.importer" name="[COLOR lime]Repo Importer[/COLOR]" version="18.9.7" provider-name="X">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>

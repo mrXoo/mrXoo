@@ -11,6 +11,6 @@
   <extension point="xbmc.addon.metadata">
     <summary lang="en">Addon Importer</summary>
     <description lang="en"></description>
-    <platform>linux</platform>
+    <platform>all</platform>
   </extension>
 </addon>

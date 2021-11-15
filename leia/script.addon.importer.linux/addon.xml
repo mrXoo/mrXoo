@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.addon.importer.linux" name="[COLOR lime]Addon Importer[/COLOR]" version="19.9.10c" provider-name="X">
+<addon id="script.addon.importer.linux" name="[COLOR lime]Addon Importer[/COLOR]" version="19.9.12" provider-name="X">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="plugin.video.exodusredux" />
-    <import addon="plugin.video.themagicdragon" />
-    <import addon="plugin.video.thecrew" />	
-    <import addon="plugin.video.replay" />
-    <import addon="script.plex" />	
-	<import addon="plugin.video.themoviedb.helper" />
+    <import addon="plugin.video.fen" version="3.5.06"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="service.py">
         <provides></provides>
@@ -16,6 +11,6 @@
   <extension point="xbmc.addon.metadata">
     <summary lang="en">Addon Importer</summary>
     <description lang="en"></description>
-    <platform>linux</platform>
+    <platform>all</platform>
   </extension>
 </addon>

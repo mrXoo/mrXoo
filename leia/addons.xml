@@ -1,6 +1,6 @@
 <addons>
 
-<addon id="plugin.program.cerestore" name="[COLOR lime][B]LEIA RESTORE[/B][/COLOR]" version="1.0.1" provider-name="MR ED REPO">
+<addon id="plugin.program.cerestore" name="[COLOR lime][B]LEIA RESTORE[/B][/COLOR]" version="1.0.1" provider-name="MR X">
   <requires>
   	<import addon="script.module.requests" />
   </requires>
@@ -17,7 +17,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.program.lebuildrestore" name="[COLOR lime][B]LEIA RESTORE[/B][/COLOR]" version="1.9.0" provider-name="MR ED REPO">
+<addon id="plugin.program.lebuildrestore" name="[COLOR lime][B]LEIA RESTORE[/B][/COLOR]" version="2.0.1" provider-name="MR X">
   <requires>
     <import addon="xbmc.gui" version="5.14.0"/>
   	<import addon="script.module.requests" />

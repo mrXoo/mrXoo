@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.program.cerestore" name="[COLOR lime][B]LEIA RESTORE[/B][/COLOR]" version="1.0.1" provider-name="MR ED REPO">
+<addon id="plugin.program.cerestore" name="[COLOR lime][B]LEIA RESTORE[/B][/COLOR]" version="1.0.1" provider-name="MR X">
   <requires>
   	<import addon="script.module.requests" />
   </requires>

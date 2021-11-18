@@ -1,5 +1,22 @@
 <addons>
 
+<addon id="plugin.program.cerestore" name="[COLOR lime][B]LEIA BUILD RESTORE[/B][/COLOR]" version="2.0.1" provider-name="MR ED REPO">
+  <requires>
+  	<import addon="script.module.requests" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">CoreELEC Leia Restore</summary>
+    <description lang="en">Restore Leia CoreELEC</description>
+    <platform>all</platform>
+    <assets>
+        <icon>icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
 <addon id="plugin.video.addon.recorder"
 version="1.0.32"
 name="Addon Recorder"

@@ -1,6 +1,6 @@
 <addons>
 
-<addon id="plugin.program.cerestore" name="[COLOR lime][B]LEIA RESTORE[/B][/COLOR]" version="1.0.1" provider-name="MR X">
+<addon id="plugin.program.cefirmware" name="[COLOR lime][B]UPGRADE BOX[/B][/COLOR]" version="1.0.1" provider-name="MR X">
   <requires>
   	<import addon="script.module.requests" />
   </requires>
@@ -8,8 +8,25 @@
         <provides>executable</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en"> Leia CoreELEC Restore</summary>
-    <description lang="en">Restore CoreELEC Leia</description>
+    <summary lang="en">CoreELEC Firmware Update</summary>
+    <description lang="en">UPDATE CoreELEC FIRMWARE</description>
+    <platform>all</platform>
+    <assets>
+        <icon>icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="plugin.program.cerestore" name="[COLOR lime][B]BUILD RESTORE[/B][/COLOR]" version="0.0.1" provider-name="MR ED REPO">
+  <requires>
+  	<import addon="script.module.requests" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">CoreELEC Restore</summary>
+    <description lang="en">Restore CoreELEC</description>
     <platform>all</platform>
     <assets>
         <icon>icon.png</icon>
@@ -121,17 +138,9 @@ provider-name="jurialmunkey">
 </extension>
 </addon>
 
-<addon id="repository.mrx" name="[COLOR lime]MR X[/COLOR]" version="0.0.1" provider-name="">
-    <requires>
-        <import addon="xbmc.addon" version="17.0.0"/>
-    </requires>
+<addon id="repository.mrx" name="[COLOR lime]MR X LEIA[/COLOR]" version="1.0.1" provider-name="">
     <extension point="xbmc.addon.repository"
         name="X">
-        <dir minversion="17.0.0">
-            <info compressed="false">https://raw.githubusercontent.com/mrXoo/mrXoo/master/krypton/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/mrXoo/mrXoo/master/krypton/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/mrXoo/mrXoo/master/krypton/</datadir>
-        </dir>
         <dir minversion="18.0.0">
             <info compressed="false">https://raw.githubusercontent.com/mrXoo/mrXoo/master/leia/addons.xml</info>
             <checksum>https://raw.githubusercontent.com/mrXoo/mrXoo/master/leia/addons.xml.md5</checksum>

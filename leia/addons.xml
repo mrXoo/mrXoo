@@ -34,6 +34,26 @@
   </extension>
 </addon>
 
+<addon id="plugin.program.iptv.groups"
+version="0.0.1"
+name="iptv groups"
+provider-name="primaeval">
+<requires>
+  <import addon="xbmc.python" version="2.20.0"/>
+  <import addon="script.module.xbmcswift2" version="2.4.0"/>
+  <import addon="script.module.requests" version="2.9.1" />
+</requires>
+<extension point="xbmc.python.pluginsource" library="main.py">
+  <provides>executable</provides>
+</extension>
+<extension point="xbmc.service" library="server.py" start="login"/>
+<extension point="xbmc.addon.metadata">
+  <summary lang="en">create new m3u filtered by group</summary>
+  <description lang="en"></description>
+  <disclaimer lang="en"></disclaimer>
+</extension>
+</addon>
+
 <addon id="plugin.program.lebuildrestore" name="[COLOR lime][B]LEIA RESTORE[/B][/COLOR]" version="2.0.1" provider-name="MR X">
   <requires>
     <import addon="xbmc.gui" version="5.14.0"/>
@@ -70,6 +90,26 @@ provider-name="primaeval">
   <description lang="en">Record from Addon Streams on a Timer. Requires ffmpeg. Add Rule with python regexes.</description>
   <disclaimer lang="en">Make sure you have legal permission to record from the creators.</disclaimer>
 </extension>
+</addon>
+
+<addon id="plugin.video.kemo" name="[COLOR lime]kemo IPTV[/COLOR]" version="1.0.1" provider-name="X">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests" />
+	<import addon="pvr.iptvsimple" />
+	<import addon="plugin.program.iptv.groups" />
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">KEMO Addon</summary>
+    <language>en</language>
+    <description lang="en">IPTV and VOD</description>
+     <platform>all</platform>
+  </extension>
 </addon>
 
 <addon id="plugin.video.themoviedb.helper"

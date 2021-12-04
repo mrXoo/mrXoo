@@ -7,7 +7,7 @@
         <provides>executable</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en"> Matrix CoreELEC Restore</summary>
+    <summary lang="en">Restore Matrix build on box</summary>
     <description lang="en">Restore CoreELEC Matrix</description>
     <platform>all</platform>
     <assets>

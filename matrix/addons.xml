@@ -17,7 +17,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.kemo" name="KEMO IPTV" version="2.0.1" provider-name="X">
+<addon id="plugin.video.kemo" name="KEMO IPTV" version="2.0.2" provider-name="X">
   <requires>
 	<import addon="xbmc.python" version="3.0.0" />
 	<import addon="script.module.requests" />
@@ -26,6 +26,7 @@
   <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>video</provides>
   </extension>
+  <extension point="xbmc.service" library="service.py" start="startup" />
   <extension point="xbmc.addon.metadata">
     <summary lang="en">Kemo Addon</summary>
     <language>en</language>

@@ -1,8 +1,0 @@
-<settings>
-<category label="General">
-     <setting id="Username" type="text" label="Username" default=""/>
-     <setting id="Password" type="text" label="Password" default=""/>
-     <setting id="meta" type="bool" label="Meta" default="true"/>
-     <setting id="hidexxx" type="bool" label="XXX Channels" default="false"/>
-</category>
-</settings>

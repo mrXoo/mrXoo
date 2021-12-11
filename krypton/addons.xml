@@ -1,0 +1,611 @@
+<addons>
+<addon id="plugin.program.addoncleaner" name="[COLOR lime]Addon Cleaner[/COLOR]" version="1.57.6" provider-name="X">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="startup.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Automatically cleans up old addons, userdata, packages and Cache.</summary>
+    <description lang="en"></description>
+	<disclaimer lang="en"></disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.addon.importer.linux" name="[COLOR lime]Addon Importer[/COLOR]" version="18.9.12" provider-name="X">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="plugin.video.fen" version="3.5.06"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="service.py">
+        <provides></provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Addon Importer</summary>
+    <description lang="en"></description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.repo.importer" name="[COLOR lime]Repo Importer[/COLOR]" version="18.9.7" provider-name="X">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="service.py">
+    <provides></provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="startup">
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Repo Importer</summary>
+    <description lang="en">Import new repos automatically.
+Thanks to all Devs who have contributed to this project!</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.program.lebuildrestore" name="[COLOR lime][B]KRYPTON RESTORE[/B][/COLOR]" version="1.9.0" provider-name="MR ED REPO">
+  <requires>
+    <import addon="xbmc.gui" version="5.12.0"/>
+  	<import addon="script.module.requests" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">KRYPTON Restore</summary>
+    <description lang="en">Restore KRYPTON </description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.program.libreelecupdater18" name="[COLOR lime]LibreELEC Updater 18[/COLOR]" version="2.0.0" provider-name="X">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.addon.common" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="updater.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">LibreELEC Updater</summary>
+    <description lang="en"></description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.program.skinchangeradvanced" name="[COLOR lime][B]A SKIN CHANGER[/B][/COLOR]" version="1.10.0" provider-name="MR ED REPO">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.addon.importer.linux" />
+	<import addon="script.repo.importer" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable video</provides>
+  </extension>
+  <extension point="xbmc.service" library="startup.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Skin Changer</summary>
+    <description lang="en">Change to the ADVANCED skin</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+
+<addon id="plugin.program.super.favourites" name="[COLOR lime]Super Favourites[/COLOR]" version="1.0.59a" provider-name="spoyser">
+  <requires>
+    <import addon="xbmc.python" version="2.14.0"/>
+    <import addon="script.module.metahandler" optional="true" />
+  </requires>
+
+
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video audio image executable</provides>
+  </extension>
+
+  
+  <extension point="xbmc.service" library="service.py" start="startup" />
+
+  
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Put all your favourites bits of all your favourites addons into one easy to use addon.</summary>
+    <description lang="en">Super Favourites is a better way of managing your Kodi Favourites.[CR][CR]Virtually any menu item within Kodi can be added to Super Favourites, even from addons that don't normally provide this feature.[CR][CR]Super Favourites allows you to better manage your Kodi favourites, including the creation of sub-folders, into which your Kodi favourites can then be copied or moved into.[CR][CR]This allows you to create you own custom addon with just the best bits of your favourite addons. Search your favourite addons, play your favourite music, read your favourite comic strips, select your favourite playlists, browse your favourite movies, listen to your favourite radio stations, watch your favourite cartoons, the possibilities are endless, all from within one easy to use addon.</description>
+    <platform>all</platform>
+    <language>en</language>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum>http://forum.xbmc.org/showthread.php?tid=192662</forum>
+    <website></website>
+    <source>https://github.com/spoyser/spoyser-repo/tree/master/plugin.program.super.favourites</source>
+    <email>seanpoyser at gmail.com</email>
+
+    <news>
+1.0.58: 14th May 2017
+    - fixes for global menu
+    - fixes for adding items from File Manager
+    - fixes for Show fanart setting
+    </news>
+
+  </extension>
+
+
+  <extension point="kodi.context.item">
+    <menu id="kodi.core.main">
+
+      <item library="capture.py">
+        <label>$ADDON[plugin.program.super.favourites 30002]</label>
+        <visible>!IsEmpty(Window(Home).Property(SF_STD_CONTEXTMENU_ENABLED)) + !StringCompare(Container.PluginName,plugin.program.super.favourites)</visible>
+      </item>
+
+      <item library="menu_addtofaves.py">
+        <label>$ADDON[plugin.program.super.favourites 30047]</label>
+        <visible>!IsEmpty(Window(Home).Property(SF_STD_ADDTOFAVES_ENABLED)) + !StringCompare(Container.PluginName,plugin.program.super.favourites)</visible>
+      </item>
+
+      <item library="menu_download.py">
+        <label>$ADDON[plugin.program.super.favourites 30259]</label>
+        <visible>!IsEmpty(Window(Home).Property(SF_STD_DOWNLOAD_ENABLED)) + Player.IsInternetStream</visible>
+      </item>
+
+    </menu>
+  </extension>
+
+</addon>
+
+<addon id="plugin.program.vadercenter" name="[COLOR lime]Paid TV Setup[/COLOR]" version="2.0.1" provider-name="X">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.addon.common" />
+	<import addon="pvr.iptvsimple" version="2.4.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Paid APPS</summary>
+    <description lang="en"></description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.addon.recorder"
+version="0.0.31"
+name="Addon Recorder"
+provider-name="primaeval">
+<requires>
+  <import addon="xbmc.python" version="2.20.0"/>
+  <import addon="script.module.xbmcswift2" version="2.4.0"/>
+  <import addon="script.module.requests" version="2.9.1" />
+  <import addon="script.module.futures"  />
+</requires>
+<extension point="xbmc.python.pluginsource" library="main.py">
+  <provides>video</provides>
+</extension>
+<extension point="xbmc.service" library="service.py" start="login"/>
+<extension point="xbmc.addon.metadata">
+  <summary lang="en">PVR Recorder for Addon Streams</summary>
+  <description lang="en">Record from Addon Streams on a Timer. Requires ffmpeg. Add Rule with python regexes.</description>
+  <disclaimer lang="en">Make sure you have legal permission to record from the creators.</disclaimer>
+</extension>
+</addon>
+
+<addon id="plugin.video.exodusv2" name="[COLOR lime]Exodus IPTV[/COLOR]" version="7.0.2" provider-name="SteevieGee">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests" />
+	<import addon="pvr.iptvsimple" />
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Exodus Addon</summary>
+    <language>en</language>
+    <description lang="en">IPTV and VOD</description>
+     <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.fen" name="Fen" provider-name="Tiki" version="3.5.06">
+    <requires>
+        <import addon="script.module.requests" version="2.19.1" />
+        <import addon="script.module.pil" version="1.1.7" />
+        <import addon="script.tikiart" version="1.0.0" />
+        <import addon="script.module.myaccounts" version="0.0.0" />
+        <import addon="script.module.fenomscrapers" version="0.0.0" />
+    </requires>
+    <extension library="resources/lib/fen.py" point="xbmc.python.pluginsource">
+        <provides>video</provides>
+    </extension>
+    <extension library="resources/lib/service.py" point="xbmc.service" />
+    <extension library="resources/lib/" point="xbmc.python.module" />
+    <extension point="kodi.context.item">
+        <menu id="kodi.core.main">
+            <item library="resources/contextmenu/refresh_widgets.py">
+                <label>40001</label>
+                <visible>String.IsEqual(ListItem.Property(fen_widget),true)</visible>
+            </item>
+            <item library="resources/contextmenu/mark_watched.py">
+                <label>40003</label>
+                <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode)] + String.IsEqual(ListItem.Property(fen_widget),true) + String.IsEqual(ListItem.Property(fen_playcount),0)</visible>
+            </item>
+            <item library="resources/contextmenu/mark_unwatched.py">
+                <label>40004</label>
+                <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode)] + String.IsEqual(ListItem.Property(fen_widget),true) + String.IsEqual(ListItem.Property(fen_playcount),1)</visible>
+            </item>
+            <item library="resources/contextmenu/clear_progress.py">
+                <label>40009</label>
+                <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode)] + String.IsEqual(ListItem.Property(fen_widget),true) + String.IsEqual(ListItem.Property(fen_in_progress),true)</visible>
+            </item>
+            <item library="resources/contextmenu/browse.py">
+                <label>40002</label>
+                <visible>String.IsEqual(ListItem.dbtype,episode) + String.IsEqual(ListItem.Property(fen_widget),true)</visible>
+            </item>
+            <item library="resources/contextmenu/trakt_manager.py">
+                <label>40005</label>
+                <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow)] + String.IsEqual(ListItem.Property(fen_widget),true)</visible>
+            </item>
+            <item library="resources/contextmenu/favorites_manager.py">
+                <label>40008</label>
+                <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow)] + String.IsEqual(ListItem.Property(fen_widget),true)</visible>
+            </item>
+            <item library="resources/contextmenu/play_random.py">
+                <label>40010</label>
+                <visible>[String.IsEqual(ListItem.dbtype,tvshow)] + String.IsEqual(ListItem.Property(fen_widget),true)</visible>
+            </item>
+            <item library="resources/contextmenu/options.py">
+                <label>40007</label>
+                <visible>String.IsEqual(ListItem.Property(fen_widget),true)</visible>
+            </item>
+            <item library="resources/contextmenu/extras.py">
+                <label>40006</label>
+                <visible>String.IsEqual(ListItem.Property(fen_widget),true)</visible>
+            </item>
+        </menu>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <reuselanguageinvoker>true</reuselanguageinvoker>
+        <summary lang="en">Mainly used for Furk and Easynews.</summary>
+        <description lang="en">This add-on is intended for advanced Kodi users only. Mainly used for Furk and Easynews(web) account access. Also utilizes Fenomscrapers for those without a Furk or Easynews(web) account. You must have a debrid service to use this add-on without Furk/Easynews.[CR][CR][B]Please Note: This add-on is NOT an Exodus fork, and as such will behave differently to an Exodus fork.[/B]</description>
+        <platform>all</platform>
+		<disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.png</fanart>
+        </assets>
+        <news>INFO: For latest changes see Changelog within Tools of add-on.</news>
+    </extension>
+</addon>
+
+<addon id="plugin.video.kemo" name="[COLOR lime]kemo IPTV[/COLOR]" version="0.0.2" provider-name="X">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests" />
+	<import addon="pvr.iptvsimple" />
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">KEMO Addon</summary>
+    <language>en</language>
+    <description lang="en">IPTV and VOD</description>
+     <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.nhlstreams" name="[COLOR lime]NHL Streams[/COLOR]" version="2.2.5" provider-name="X">
+  <requires>
+    <import addon="xbmc.python" version="2.14.0"/>
+    <import addon="script.module.pytz" version="2014.2"/>
+    <import addon="script.module.requests" version="2.9.1"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.service"
+  library="service.py" start="startup">
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">NHL Streams</summary>
+    <description lang="en">NHL Streams - a fork of the original Lazyman.NHL.tv Add-on - Thanks to demons_are_real + Vinman for their code</description>
+	<disclaimer lang="en">The authors, owners, or submitters of this addon do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.</disclaimer>	
+    <license>GNU General Public License, v2</license>
+    <forum></forum>
+  </extension>
+</addon>
+
+<addon id="plugin.video.openmeta" name="OpenMeta" version="600.2.0" provider-name="A4K">
+	<requires>
+		<import addon="xbmc.python" version="2.25.0"/>
+		<import addon="metadata.tvdb.com" version="3.0.14"/>
+		<import addon="script.module.futures" version="2.2.0"/>
+		<import addon="script.module.requests" version="2.19.1"/>
+		<import addon="script.module.requests-cache" version="0.4.13"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py"/>
+	<extension point="kodi.context.item">
+		<menu id="kodi.core.main">
+			<item library="context.py">
+				<label>OpenMeta - Default Player</label>
+				<visible>!String.StartsWith(ListItem.path,plugin://plugin.video.openmeta/)+[String.IsEqual(ListItem.dbtype,episode)|String.IsEqual(ListItem.dbtype,movie)]</visible>
+			</item>
+			<item library="context2.py">
+				<label>OpenMeta - Choose Player</label>
+				<visible>String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode)</visible>
+			</item>
+		</menu>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">TMDb, TVDb and Trakt browser</summary>
+		<description lang="en">Browse The MovieDb, The TVDb, Trakt and pass info along to library or an addon. Needs player-files and the appropriate addon to play the files.</description>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+			<screenshot>resources/screenshot000.jpg</screenshot>
+			<screenshot>resources/screenshot001.jpg</screenshot>
+			<screenshot>resources/screenshot002.jpg</screenshot>
+		</assets>
+		<license></license>
+		<forum></forum>
+		<website></website>
+		<source></source>
+		<news>
+		1.4.14 - Fix bug with missing ID in TV menus
+		1.4.13 - Added realtitle (movies) and realname (tvshows) parameters for plexkodiconnect compatibility
+		1.4.12 - Handle non-existent 'filename' key in TVDB data.
+		1.4.11 - TVDB API fix, thanks to @ruinernin and @bg-22 (among others)!
+				 BUG: Some artwork may not load for certain items, due to ongoing API instability.
+		1.4.10 - Added language option for player-files (TV)
+		1.4.9  - Fix art in TV menus
+		1.4.8  - Fix crash from empty "first_aired" string"
+		1.4.7  - Fix crash when we can't contact TVDB
+		1.4.6  - Fix crashes from non-existent keys
+		1.4.5  - Added default play action, options for movies are; Play/OpenInfo and options for episodes are; Play/OpenInfo(TV Show info)/OpenInfo(Episode info).
+		1.4.4  - Fix clearlogo for movies
+		1.4.3  - Fix typo in season fanart request.
+		1.4.2  - Add fanart caching
+		1.4.1  - Fix season artwork
+		1.4.0  - Add unwatched counts for shows/seasons.
+		1.3.2  - Fix "Upcoming Episodes" and "Next Episodes".
+		1.3.1  - Fixed "Next Page" bug with widgets.</news>
+	</extension>
+</addon>
+
+<addon id="plugin.video.replay"
+version="0.0.17"
+name="Replay"
+provider-name="primaeval">
+<requires>
+  <import addon="xbmc.python" version="2.20.0"/>
+  <import addon="script.module.xbmcswift2" version="2.4.0"/>
+  <import addon="script.module.requests" version="2.9.1" />
+  <import addon="script.module.simple.downloader" version="1.9.5"/>
+</requires>
+<extension point="xbmc.python.pluginsource" library="main.py">
+  <provides>video</provides>
+</extension>
+<extension point="xbmc.service" library="service.py" />
+<extension point="xbmc.addon.metadata">
+  <summary lang="en">Replay Streams</summary>
+  <description lang="en"></description>
+  <disclaimer lang="en"></disclaimer>
+</extension>
+</addon>
+
+<addon id="plugin.video.tvobv1" name="[COLOR lime]TV Only Better[/COLOR]" version="1.0.3" provider-name="X">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests" />
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">TVOB Addon</summary>
+    <language>en</language>
+    <description lang="en">VOD</description>
+     <platform>all</platform>
+  </extension>
+</addon>
+
+
+<addon id="repository.mrx" name="[COLOR lime]MR X[/COLOR]" version="0.0.1" provider-name="">
+    <extension point="xbmc.addon.repository"
+        name="X">
+        <dir minversion="16.0.0">
+            <info compressed="false">https://raw.githubusercontent.com/mrXoo/mrXoo/master/krypton/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/mrXoo/mrXoo/master/krypton/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/mrXoo/mrXoo/master/krypton/</datadir>
+        </dir>
+        <dir minversion="17.0.0">
+            <info compressed="false">https://raw.githubusercontent.com/mrXoo/mrXoo/master/krypton/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/mrXoo/mrXoo/master/krypton/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/mrXoo/mrXoo/master/krypton/</datadir>
+        </dir>
+        <dir minversion="18.0.0">
+            <info compressed="false">https://raw.githubusercontent.com/mrXoo/mrXoo/master/leia/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/mrXoo/mrXoo/master/leia/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/mrXoo/mrXoo/master/leia/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="repository.tikipeter" name="Tikipeter's Repository" version="0.0.6" provider-name="Tikipeter">
+    <extension point="xbmc.addon.repository" name="Tikipeter's Repository">
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/Tikipeter/repository.tikipeter/master/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/Tikipeter/repository.tikipeter/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/Tikipeter/repository.tikipeter/master/zip</datadir>
+        </dir>
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/mr-kodi/repository.myaccounts/master/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/mr-kodi/repository.myaccounts/master/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/mr-kodi/repository.myaccounts/master/zips/</datadir>
+        </dir>
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/mr-kodi/repository.fenomscrapers/master/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/mr-kodi/repository.fenomscrapers/master/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/mr-kodi/repository.fenomscrapers/master/zips/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary>Tikipeter's Repository</summary>
+        <description>Unofficial add-ons repository</description>
+    </extension>
+</addon>
+
+<addon id="script.extendedinfo" name="[COLOR lime]Extended Info [/COLOR]" version="301.0.0" provider-name=" original work by phil65">	<requires>
+		<import addon="xbmc.python" version="2.25.0"/>
+		<import addon="script.module.pil" version="1.1.7"/>
+		<import addon="plugin.video.youtube" version="6.2.2"/>
+		<import addon="script.module.requests" version="2.9.1"/>
+		<import addon="script.skin.helper.service" version="1.0.0"/>
+		<import addon="resource.images.studios.white" version="0.0.18"/>
+		<import addon="plugin.video.openmeta"/>
+	</requires>
+	<extension point="xbmc.python.script" library="script.py"/>
+	<extension point="xbmc.python.pluginsource" library="plugin.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="kodi.context.item">
+		<menu id="kodi.core.main">
+			<item library="context.py">
+				<label>OpenInfo</label>
+				<visible>String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,season) | String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,actor) | String.IsEqual(ListItem.dbtype,director)</visible>
+			</item>
+		</menu>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<reuselanguageinvoker>false</reuselanguageinvoker>
+		<platform>all</platform>
+		<summary>Fork of the ExtendedInfo script from phil65</summary>
+		<description>This script offers various possibilities to display online content inside skins as well as a complete MovieDB browser including info dialogs for various media types. Needs skin implementation for lot of functions and OpenMeta for library functions.</description>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+			<screenshot>resources/screenshot1.jpg</screenshot>
+			<screenshot>resources/screenshot2.jpg</screenshot>
+			<screenshot>resources/screenshot3.jpg</screenshot>
+		</assets>
+		<news>
+-[B]v.6.1.0[/B]
+Added "Original language" filter to videolist(Movies &amp; TV Shows Browser).[CR]
+-[B]NOTE[/B]
+Major code changes is in the works for the next version of OpenInfo(v.7.0.0) which our focus has shifted towards to.
+		</news>
+	</extension>
+</addon>
+
+
+<addon
+  id="skin.xonfluence"
+  version="3.3.21"
+  name="Xonfluence"
+  provider-name="Helly">
+  <requires>
+    <import addon="xbmc.gui" version="5.12.0"/>
+	  <import addon="script.favourites" version="6.0.3"/>
+	  <import addon="service.skin.widgets" version="0.0.32"/>
+	  <import addon="service.library.data.provider" version="0.1.6"/>
+	  <import addon="script.randomandlastitems" version="2.2.2"/>
+  </requires>
+  <extension
+    point="xbmc.gui.skin"
+    debugging="false"
+    effectslowdown="1.0">
+    <res width="1280" height="720" aspect="16:9" default="true" folder="720p" />
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">eXtended MOD of Confluence skin originally by Jezz_X and CCM by Mudislander.</summary>
+    <summary lang="en_US">eXtended MOD of Confluence skin originally by Jezz_X and CCM by Mudislander.</summary>
+    <summary lang="nl">Uitgebreide MOD van Confluence skin origineel door Jezz_X en CCM door Mudislander.</summary>
+    <description lang="en">Xonfluence is a MOD of Confluence to enable a greater degree of user customisation to the default skin (based by Mudislander's CCM).</description>
+    <description lang="en_US">Xonfluence is a MOD of Confluence to enable a greater degree of user customisation to the default skin (based by Mudislander's CCM).</description>
+    <description lang="nl">Xonfluence is een MOD van Confluence om een grotere aanpassingsmogelijkheid te geven ten opzichten van de standaard skin (gebaseerd op Mudislander's CCM).</description>
+    <disclaimer lang="en">You break it - You get to keep the pieces</disclaimer>
+    <disclaimer lang="en_US">You break it - You get to keep the pieces</disclaimer>
+    <disclaimer lang="nl">Wie zijn billen brandt - moet op de blaren zitten</disclaimer>
+    <platform>all</platform>
+    <assets>
+      <icon>resources/icon.png</icon>
+      <fanart>resources/fanart.jpg</fanart>
+	    <screenshot>resources/screenshot-01.jpg</screenshot>
+	    <screenshot>resources/screenshot-02.jpg</screenshot>
+	    <screenshot>resources/screenshot-03.jpg</screenshot>
+	    <screenshot>resources/screenshot-04.jpg</screenshot>
+	    <screenshot>resources/screenshot-05.jpg</screenshot>
+	    <screenshot>resources/screenshot-06.jpg</screenshot>
+	    <screenshot>resources/screenshot-07.jpg</screenshot>
+	    <screenshot>resources/screenshot-08.jpg</screenshot>
+	    <screenshot>resources/screenshot-09.jpg</screenshot>
+    </assets>
+    <news>See changelog for latest changes</news>
+  </extension>
+</addon>
+
+<addon id="video.lazyman.nhl.tv" name="[COLOR lime]LazyMan NHL.tv[/COLOR]" version="2.0.8" provider-name="X">
+  <requires>
+    <import addon="xbmc.python" version="2.14.0"/>
+    <import addon="script.module.requests" version="2.9.1"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.service"
+  library="service.py" start="startup">
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">LazyMan NHL.tv</summary>
+    <description lang="en">http://reddit.com/r/lazyman</description>
+    <license>GNU General Public License, v2</license>
+    <language/>
+    <forum>http://reddit.com/r/lazyman</forum>
+    <assets>
+      <icon>resources/icon.png</icon>
+      <fanart>resources/fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+
+
+
+<addon id="plugin.video.shadow"                                                                                                                                    
+	   name="Shadow"                                                 
+	   version="2.4.6"                                                                                                                                        
+	   provider-name="Darkness">
+  <requires>
+	
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">The single light in the Darkness</summary>
+    <description lang="en">All the media as fast as possible</description>
+	
+    <platform>all</platform>
+  </extension>
+</addon>
+
+</addons>

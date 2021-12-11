@@ -1,31 +1,16 @@
 <addons>
 
-<addon id="plugin.program.addoncleaner" name="[COLOR lime]Addon Cleaner[/COLOR]" version="1.57.7" provider-name="X">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.service" library="startup.py" start="startup" />
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Automatically cleans up old addons, userdata, packages and Cache.</summary>
-    <description lang="en"></description>
-	<disclaimer lang="en"></disclaimer>
-    <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="plugin.program.cefirmware" name="[COLOR lime][B]UPGRADE BOX[/B][/COLOR]" version="1.0.1" provider-name="MR X">
+<addon id="plugin.program.backup" name="[COLOR lime][B]BACKUP[/B][/COLOR]" version="0.0.1" provider-name="MR X">
   <requires>
   	<import addon="script.module.requests" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>executable</provides>
   </extension>
+  <extension point="xbmc.service" library="service.py" start="startup" />
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">CoreELEC Firmware Update</summary>
-    <description lang="en">UPDATE CoreELEC FIRMWARE</description>
+    <summary lang="en">Auto Backup and manual Restore</summary>
+    <description lang="en">Auto Backup and manual Restore</description>
     <platform>all</platform>
     <assets>
         <icon>icon.png</icon>
@@ -33,16 +18,35 @@
   </extension>
 </addon>
 
-<addon id="plugin.program.cerestore" name="[COLOR lime][B]BUILD RESTORE[/B][/COLOR]" version="1.0.3a" provider-name="MR X">
+<addon id="plugin.program.cefirmware" name="[COLOR lime][B]UPGRADE BOX[/B][/COLOR]" version="1.0.1" provider-name="MR X">
   <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
   	<import addon="script.module.requests" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>executable</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">CoreELEC Restore</summary>
-    <description lang="en">Restore CoreELEC</description>
+    <summary lang="en">CoreELEC Firmware Update</summary>
+    <description lang="en">Update box to matrix then install the matrix build in one operation.</description>
+    <platform>all</platform>
+    <assets>
+        <icon>icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="plugin.program.cerestore" name="[COLOR lime][B]LEIA RESTORE[/B][/COLOR]" version="1.0.1" provider-name="MR X">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  	<import addon="script.module.requests" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">CoreELEC Restore Leia</summary>
+    <description lang="en">Restore Leia CoreELEC</description>
     <platform>all</platform>
     <assets>
         <icon>icon.png</icon>
@@ -67,44 +71,6 @@ provider-name="primaeval">
   <summary lang="en">create new m3u filtered by group</summary>
   <description lang="en"></description>
   <disclaimer lang="en"></disclaimer>
-</extension>
-</addon>
-
-<addon id="plugin.program.lebuildrestore" name="[COLOR lime][B]LEIA RESTORE[/B][/COLOR]" version="2.0.1" provider-name="MR X">
-  <requires>
-    <import addon="xbmc.gui" version="5.14.0"/>
-  	<import addon="script.module.requests" />
-  	<import addon="plugin.program.cerestore" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">LEIA Restore</summary>
-    <description lang="en">LEIA RESTORE</description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="plugin.video.addon.recorder"
-version="1.0.32"
-name="Addon Recorder"
-provider-name="primaeval">
-<requires>
-  <import addon="tools.ffmpeg-tools"  />
-  <import addon="xbmc.python" version="2.20.0"/>
-  <import addon="script.module.xbmcswift2" version="2.4.0"/>
-  <import addon="script.module.requests" version="2.9.1" />
-  <import addon="script.module.futures"  />
-</requires>
-<extension point="xbmc.python.pluginsource" library="main.py">
-  <provides>video</provides>
-</extension>
-<extension point="xbmc.service" library="service.py" start="login"/>
-<extension point="xbmc.addon.metadata">
-  <summary lang="en">PVR Recorder for Addon Streams</summary>
-  <description lang="en">Record from Addon Streams on a Timer. Requires ffmpeg. Add Rule with python regexes.</description>
-  <disclaimer lang="en">Make sure you have legal permission to record from the creators.</disclaimer>
 </extension>
 </addon>
 
@@ -208,10 +174,9 @@ provider-name="jurialmunkey">
     </extension>
 </addon>
 
-<addon id="script.addon.importer.linux" name="[COLOR lime]Addon Importer[/COLOR]" version="19.9.12" provider-name="X">
+<addon id="script.addon.importer.linux" name="[COLOR lime]Addon Importer[/COLOR]" version="1.0.1" provider-name="X">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="plugin.video.fen" version="3.5.06"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="service.py">
         <provides></provides>
@@ -224,163 +189,21 @@ provider-name="jurialmunkey">
   </extension>
 </addon>
 
-<addon id="script.extendedinfo" name="OpenInfo" version="401.2.0" provider-name="A4K">
-	<requires>
-		<import addon="xbmc.python" version="2.25.0"/>
-		<import addon="script.module.pil" version="1.1.7"/>
-		<import addon="plugin.video.youtube" version="6.2.2"/>
-		<import addon="script.module.requests" version="2.9.1"/>
-		<import addon="script.skin.helper.service" version="1.0.0"/>
-		<import addon="resource.images.studios.white" version="0.0.18"/>
-		<import addon="plugin.video.openmeta" version="1.0.0" optional="true"/>
-	</requires>
-	<extension point="xbmc.python.script" library="script.py"/>
-	<extension point="xbmc.python.pluginsource" library="plugin.py">
-		<provides>video</provides>
-	</extension>
-	<extension point="kodi.context.item">
-		<menu id="kodi.core.main">
-			<item library="context.py">
-				<label>OpenInfo</label>
-				<visible>String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,season) | String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,actor) | String.IsEqual(ListItem.dbtype,director)</visible>
-			</item>
-		</menu>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<reuselanguageinvoker>false</reuselanguageinvoker>
-		<platform>all</platform>
-		<summary>Fork of the ExtendedInfo script from phil65</summary>
-		<description>This script offers various possibilities to display online content inside skins as well as a complete MovieDB browser including info dialogs for various media types. Needs skin implementation for lot of functions and OpenMeta for library functions.</description>
-		<assets>
-			<icon>resources/icon.png</icon>
-			<fanart>resources/fanart.jpg</fanart>
-			<screenshot>resources/screenshot1.jpg</screenshot>
-			<screenshot>resources/screenshot2.jpg</screenshot>
-			<screenshot>resources/screenshot3.jpg</screenshot>
-		</assets>
-		<news>
-		6.2.4 - Specify param in TV Show ID
-		6.2.3 - Fix TV Show trailers
-		6.2.2 - Added ability to search using the tvdb_id for "extendedepisodeinfo"
-		6.2.1 - Fix context menu now available for widgets pointing to OpenInfo's video addon items
-		6.2.0 - Added context menu force "player select" to the play button, available via "c" and long press "enter" button
-		</news>
-	</extension>
-</addon>
-
-<addon id="script.module.fenomscrapers" name="FenomScrapers Module" version="2.0.5a" provider-name="Mr-Kodi">
-	<requires>
-		<import addon="script.module.requests" />
-		<import addon="script.module.myaccounts" version="1.0.0" />
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="lib/default.py">
-		<provides>executable</provides>
-	</extension> 
-	<extension point="xbmc.service" library="lib/service.py" start="startup" />
-	<extension point="xbmc.python.module" library="lib" /> <!-- Must be placed after xbmc.python.pluginsource, otherwise the addon does not show in the repository. -->
-	<extension point="xbmc.addon.metadata">
-		<reuselanguageinvoker>false</reuselanguageinvoker>
-		<summary lang="en">FenomScrapers Module</summary>
-		<description>Scrape common video host for URL's to be playable in Kodi, simplifying addon development of video plugins requiring multi video hosts.</description>
-		<platform>all</platform>
-		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-		<forum></forum>
-		<website>https://github.com/Mr-Kodi/repository.fenomscrapers</website>
-		<source>https://github.com/Mr-Kodi/repository.fenomscrapers</source>
-		<disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.png</fanart>
-			<screenshot></screenshot>
-		</assets>
-		<news>
-[B][COLOR red]Update - v1.6.0 - Nov. 12, 2021[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Fixed aliases handling.[/I]
-[COLOR yellow]--[/COLOR][I] Removed EXTRATORRENT scraper. Proxy is now cloudflare v2 challenge and dead.[/I]
-		</news>
-	</extension>
-</addon>
-
-<addon id="script.module.myaccounts" version="2.0.0a" name="My Accounts" provider-name="Venom, Fen">
-	<requires>
-		<import addon="script.module.requests" version="2.19.1" />
-	</requires>
-	<extension point="xbmc.python.script" library="lib/default.py">
-		<provides>executable</provides>
-	</extension>
-	<extension point="xbmc.service" library="lib/service.py" start="startup" />
-	<extension point="xbmc.python.module" library="lib" /> <!-- Must be placed after xbmc.python.pluginsource, otherwise the addon does not show in the repository. -->
-	<extension point="xbmc.addon.metadata">
-		<reuselanguageinvoker>false</reuselanguageinvoker>
-		<summary lang="en">My Accounts Module</summary>
-		<description>Single placeholder for all your accounts.</description>
-		<platform>all</platform>
-		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-		<forum></forum>
-		<website>https://github.com/Mr-Kodi/repository.myaccounts</website>
-		<source>https://github.com/Mr-Kodi/repository.myaccounts</source>
-		<disclaimer lang="en">The author is not responsible for the use of this addon. [CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.png</fanart>
-			<screenshot></screenshot>
-		</assets>
-		<news>
-[B][COLOR red]Update - v1.1.4 - Nov. 02, 2021[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Fixed issue with settings function for [B]"Trakt - Account Info"[/B] fails to display if the user stats for watched minutes was less than 1 day.[/I]
-		</news>
-	</extension>
-</addon>
-
-<addon
-  id="skin.xonfluence"
-  version="4.0.10b"
-  name="Xonfluence"
-  provider-name="Helly">
+<addon id="script.startup" name="[COLOR lime][B]STARTUP[/B][/COLOR]" version="0.0.1" provider-name="X">
   <requires>
-    <import addon="xbmc.gui" version="5.14.0"/>
-	  <import addon="script.favourites" version="7.1.1"/>
-	  <import addon="service.skin.widgets" version="0.0.33"/>
-	  <import addon="service.library.data.provider" version="0.3.2"/>
-	  <import addon="script.randomandlastitems" version="2.2.2"/>
+
   </requires>
-  <extension
-    point="xbmc.gui.skin"
-    debugging="false"
-    effectslowdown="1.0">
-    <res width="1920" height="1080" aspect="16:9" default="true" folder="xml" />
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
   </extension>
+  <extension point="xbmc.service" library="startup.py" start="startup" />
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">eXtended MOD of Confluence skin originally by Jezz_X and CCM by Mudislander.</summary>
-    <summary lang="en_US">eXtended MOD of Confluence skin originally by Jezz_X and CCM by Mudislander.</summary>
-    <summary lang="nl">Uitgebreide MOD van Confluence skin origineel door Jezz_X en CCM door Mudislander.</summary>
-    <description lang="en">Xonfluence is a MOD of Confluence to enable a greater degree of user customisation to the default skin (based by Mudislander's CCM).</description>
-    <description lang="en_US">Xonfluence is a MOD of Confluence to enable a greater degree of user customisation to the default skin (based by Mudislander's CCM).</description>
-    <description lang="nl">Xonfluence is een MOD van Confluence om een grotere aanpassingsmogelijkheid te geven ten opzichten van de standaard skin (gebaseerd op Mudislander's CCM).</description>
-    <disclaimer lang="en">You break it - You get to keep the pieces</disclaimer>
-    <disclaimer lang="en_US">You break it - You get to keep the pieces</disclaimer>
-    <disclaimer lang="nl">Wie zijn billen brandt - moet op de blaren zitten</disclaimer>
+    <summary lang="en"></summary>
+    <description lang="en"></description>
     <platform>all</platform>
-	  <license>GNU General Public License version 2</license>
-	  <forum>https://forum.kodi.tv/showthread.php?tid=315391</forum>
-	  <website></website>
-	  <email></email>
-	  <source>https://github.com/Helly1206/skin.xonfluence</source>
-    <assets>
-      <icon>resources/icon.png</icon>
-      <fanart>resources/fanart.jpg</fanart>
-	    <screenshot>resources/screenshot-01.jpg</screenshot>
-	    <screenshot>resources/screenshot-02.jpg</screenshot>
-	    <screenshot>resources/screenshot-03.jpg</screenshot>
-	    <screenshot>resources/screenshot-04.jpg</screenshot>
-	    <screenshot>resources/screenshot-05.jpg</screenshot>
-	    <screenshot>resources/screenshot-06.jpg</screenshot>
-	    <screenshot>resources/screenshot-07.jpg</screenshot>
-	    <screenshot>resources/screenshot-08.jpg</screenshot>
-	    <screenshot>resources/screenshot-09.jpg</screenshot>
-    </assets>
-    <news>See changelog for latest changes</news>
   </extension>
 </addon>
+
+
 
 </addons>

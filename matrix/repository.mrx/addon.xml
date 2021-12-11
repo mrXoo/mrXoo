@@ -2,6 +2,11 @@
 <addon id="repository.mrx" name="[COLOR lime]MR X MATRIX[/COLOR]" version="2.0.1" provider-name="">
     <extension point="xbmc.addon.repository"
         name="X">
+        <dir minversion="18.0.0">
+            <info compressed="false">https://raw.githubusercontent.com/mrXoo/mrXoo/master/leia/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/mrXoo/mrXoo/master/leia/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/mrXoo/mrXoo/master/leia/</datadir>
+        </dir>				
         <dir minversion="19.0.0">
             <info compressed="false">https://raw.githubusercontent.com/mrXoo/mrXoo/master/matrix/addons.xml</info>
             <checksum>https://raw.githubusercontent.com/mrXoo/mrXoo/master/matrix/addons.xml.md5</checksum>

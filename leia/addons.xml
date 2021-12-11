@@ -1,6 +1,6 @@
 <addons>
 
-<addon id="plugin.program.backup" name="[COLOR lime][B]BACKUP[/B][/COLOR]" version="0.0.1" provider-name="MR X">
+<addon id="plugin.program.backup" name="[COLOR lime][B]SETTINGS RESTORE[/B][/COLOR]" version="0.0.1" provider-name="MR X">
   <requires>
   	<import addon="script.module.requests" />
   </requires>
@@ -9,8 +9,8 @@
   </extension>
   <extension point="xbmc.service" library="service.py" start="startup" />
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">Auto Backup and manual Restore</summary>
-    <description lang="en">Auto Backup and manual Restore</description>
+    <summary lang="en">Auto Backup and manual Restore all your personal settings like streaming addons and wifi settings</summary>
+    <description lang="en">Auto Backup and manual Restore all your personal settings like streaming addons and wifi settings</description>
     <platform>all</platform>
     <assets>
         <icon>icon.png</icon>
@@ -189,7 +189,7 @@ provider-name="jurialmunkey">
   </extension>
 </addon>
 
-<addon id="script.startup" name="[COLOR lime][B]STARTUP[/B][/COLOR]" version="0.0.1" provider-name="X">
+<addon id="script.startup" name="[COLOR lime][B]STARTUP[/B][/COLOR]" version="1.0.1" provider-name="X">
   <requires>
 
   </requires>

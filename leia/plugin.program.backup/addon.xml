@@ -9,7 +9,7 @@
   <extension point="xbmc.service" library="service.py" start="startup" />
   <extension point="xbmc.addon.metadata">
     <summary lang="en">Auto Backup and manual Restore all your personal settings like streaming addons and wifi settings</summary>
-    <description lang="en">Auto Backup and manual Restore</description>
+    <description lang="en">Auto Backup and manual Restore all your personal settings like streaming addons and wifi settings</description>
     <platform>all</platform>
     <assets>
         <icon>icon.png</icon>

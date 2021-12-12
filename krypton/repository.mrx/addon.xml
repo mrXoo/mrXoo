@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.mrx" name="[COLOR lime]MR X[/COLOR]" version="0.0.1" provider-name="">
+<addon id="repository.mrx" name="[COLOR lime]MR X[/COLOR]" version="0.0.1a" provider-name="">
     <extension point="xbmc.addon.repository"
         name="X">
         <dir minversion="16.0.0">

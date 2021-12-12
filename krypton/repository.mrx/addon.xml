@@ -1,17 +1,25 @@
-<addon id="repository.mrx" name="[COLOR lime]MR X[/COLOR]" provider-name="X" version="0.0.2">
-        <requires>
-            <import addon="xbmc.addon" version="12.0.0" />
-        </requires>
-        <extension name="[COLOR lime]MR X[/COLOR]" point="xbmc.addon.repository">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.mrx" name="[COLOR lime]MR X[/COLOR]" version="0.0.1" provider-name="">
+    <extension point="xbmc.addon.repository"
+        name="X">
+        <dir minversion="16.0.0">
             <info compressed="false">https://raw.githubusercontent.com/mrXoo/mrXoo/master/krypton/addons.xml</info>
             <checksum>https://raw.githubusercontent.com/mrXoo/mrXoo/master/krypton/addons.xml.md5</checksum>
             <datadir zip="true">https://raw.githubusercontent.com/mrXoo/mrXoo/master/krypton/</datadir>
-            <hashes>false</hashes>
-        </extension>
-        <extension point="xbmc.addon.metadata">
-            <summary></summary>
-            <description></description>
-            <platform>all</platform>
+        </dir>
+        <dir minversion="17.0.0">
+            <info compressed="false">https://raw.githubusercontent.com/mrXoo/mrXoo/master/krypton/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/mrXoo/mrXoo/master/krypton/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/mrXoo/mrXoo/master/krypton/</datadir>
+        </dir>
+        <dir minversion="18.0.0">
+            <info compressed="false">https://raw.githubusercontent.com/mrXoo/mrXoo/master/leia/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/mrXoo/mrXoo/master/leia/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/mrXoo/mrXoo/master/leia/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
     </extension>
 </addon>
 

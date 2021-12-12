@@ -1,9 +1,10 @@
 <addons>
 
-<addon id="script.addon.importer.linux" name="[COLOR lime]Addon Importer[/COLOR]" version="18.9.12" provider-name="X">
+<addon id="script.addon.importer.linux" name="[COLOR lime]Addon Importer[/COLOR]" version="18.9.13" provider-name="X">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="plugin.video.fen" version="3.5.06"/>
+    <import addon="plugin.program.backup" version="0.0.1"/>
+    <import addon="script.startup" version="0.0.1"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="service.py">
         <provides></provides>
@@ -15,6 +16,7 @@
     <platform>all</platform>
   </extension>
 </addon>
+
 
 <addon id="script.repo.importer" name="[COLOR lime]Repo Importer[/COLOR]" version="18.9.7" provider-name="X">
   <requires>
@@ -91,6 +93,21 @@ Thanks to all Devs who have contributed to this project!</description>
     <extension point="xbmc.addon.metadata">
         <platform>all</platform>
     </extension>
+</addon>
+
+<addon id="script.startup" name="[COLOR lime][B]STARTUP[/B][/COLOR]" version="0.0.1" provider-name="X">
+  <requires>
+
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="startup.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en"></summary>
+    <description lang="en"></description>
+    <platform>all</platform>
+  </extension>
 </addon>
 
 

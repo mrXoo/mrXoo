@@ -1,4 +1,24 @@
 <addons>
+<!--  DELETE THIS ADDON AT SOME POINT !-->
+<addon id="plugin.program.lebuildrestore" name="[COLOR lime][B]LEIA RESTORE[/B][/COLOR]" version="2.0.2" provider-name="MR X">
+  <requires>
+    <import addon="xbmc.gui" version="5.14.0"/>
+  	<import addon="script.module.requests" />
+  	<import addon="plugin.program.cerestore" />
+  	<import addon="script.startup" />
+  	<import addon="plugin.program.backup" />
+  	<import addon="plugin.program.cefirmware" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">LEIA Restore</summary>
+    <description lang="en">LEIA RESTORE</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 
 <addon id="plugin.program.backup" name="[COLOR lime][B]SETTINGS RESTORE[/B][/COLOR]" version="0.0.1" provider-name="MR X">
   <requires>
@@ -160,13 +180,18 @@ provider-name="jurialmunkey">
 </extension>
 </addon>
 
-<addon id="repository.mrx" name="[COLOR lime]MR X LEIA[/COLOR]" version="1.0.1" provider-name="">
+<addon id="repository.mrx" name="[COLOR lime]MR X LEIA[/COLOR]" version="1.0.2" provider-name="">
     <extension point="xbmc.addon.repository"
         name="X">
         <dir minversion="18.0.0">
             <info compressed="false">https://raw.githubusercontent.com/mrXoo/mrXoo/master/leia/addons.xml</info>
             <checksum>https://raw.githubusercontent.com/mrXoo/mrXoo/master/leia/addons.xml.md5</checksum>
             <datadir zip="true">https://raw.githubusercontent.com/mrXoo/mrXoo/master/leia/</datadir>
+        </dir>				
+        <dir minversion="19.0.0">
+            <info compressed="false">https://raw.githubusercontent.com/mrXoo/mrXoo/master/matrix/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/mrXoo/mrXoo/master/matrix/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/mrXoo/mrXoo/master/matrix/</datadir>
         </dir>
     </extension>
     <extension point="xbmc.addon.metadata">
@@ -174,7 +199,7 @@ provider-name="jurialmunkey">
     </extension>
 </addon>
 
-<addon id="script.addon.importer.linux" name="[COLOR lime]Addon Importer[/COLOR]" version="1.0.1" provider-name="X">
+<addon id="script.addon.importer.linux" name="[COLOR lime]Leia Addon Importer[/COLOR]" version="1.0.1" provider-name="X">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -189,7 +214,7 @@ provider-name="jurialmunkey">
   </extension>
 </addon>
 
-<addon id="script.repo.importer" name="[COLOR lime]Matrix Repo Importer[/COLOR]" version="1.0.1" provider-name="X">
+<addon id="script.repo.importer" name="[COLOR lime]Leia Repo Importer[/COLOR]" version="1.0.1" provider-name="X">
   <requires>
   </requires>
   <extension point="xbmc.python.pluginsource" library="service.py">

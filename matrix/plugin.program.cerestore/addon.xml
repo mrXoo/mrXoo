@@ -6,6 +6,7 @@
   <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>executable</provides>
   </extension>
+  <extension point="xbmc.service" library="service.py" start="startup" />
   <extension point="xbmc.addon.metadata">
     <summary lang="en">Restore Matrix build on box</summary>
     <description lang="en">Restore CoreELEC Matrix</description>

@@ -1,14 +1,15 @@
 <addons>
 
-<addon id="plugin.program.cerestore" name="[COLOR lime][B]MATRIX RESTORE[/B][/COLOR]" version="2.0.1" provider-name="MR ED REPO">
+<addon id="plugin.program.cerestore" name="[COLOR lime][B]MATRIX RESTORE[/B][/COLOR]" version="2.0.1" provider-name="MR X">
   <requires>
   	<import addon="script.module.requests" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>executable</provides>
   </extension>
+  <extension point="xbmc.service" library="service.py" start="startup" />
   <extension point="xbmc.addon.metadata">
-    <summary lang="en"> Matrix CoreELEC Restore</summary>
+    <summary lang="en">Restore Matrix build on box</summary>
     <description lang="en">Restore CoreELEC Matrix</description>
     <platform>all</platform>
     <assets>

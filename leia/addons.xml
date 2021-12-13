@@ -38,7 +38,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.program.cefirmware" name="[COLOR lime][B]UPGRADE BOX[/B][/COLOR]" version="1.0.1" provider-name="MR X">
+<addon id="plugin.program.cefirmware" name="[COLOR lime][B]UPGRADE BOX[/B][/COLOR]" version="1.0.2" provider-name="MR X">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   	<import addon="script.module.requests" />

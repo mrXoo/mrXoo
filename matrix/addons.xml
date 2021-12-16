@@ -1,6 +1,6 @@
 <addons>
 
-<addon id="plugin.program.backup" name="[COLOR lime][B]SETTINGS RESTORE[/B][/COLOR]" version="0.0.2" provider-name="MR X">
+<addon id="plugin.program.backup" name="[COLOR lime][B]SETTINGS RESTORE[/B][/COLOR]" version="2.0.3" provider-name="MR X">
   <requires>
   	<import addon="script.module.requests" />
   </requires>
@@ -189,12 +189,12 @@ provider-name="jurialmunkey">
   </extension>
 </addon>
 
-<addon id="script.startup" name="[COLOR lime][B]STARTUP[/B][/COLOR]" version="2.0.1" provider-name="X">
+<addon id="script.startup" name="[COLOR lime][B]STARTUP[/B][/COLOR]" version="2.0.2" provider-name="X">
   <requires>
 
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>executable</provides>
+        <provides></provides>
   </extension>
   <extension point="xbmc.service" library="startup.py" start="startup" />
   <extension point="xbmc.addon.metadata">

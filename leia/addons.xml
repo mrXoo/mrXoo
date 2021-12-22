@@ -20,7 +20,7 @@
 </addon>
 
 
-<addon id="plugin.program.backup" name="[COLOR lime][B]SETTINGS RESTORE[/B][/COLOR]" version="1.0.4" provider-name="MR X">
+<addon id="plugin.program.backup" name="[COLOR lime][B]SETTINGS RESTORE[/B][/COLOR]" version="1.0.5" provider-name="MR X">
   <requires>
   	<import addon="script.module.requests" />
   </requires>

@@ -1,6 +1,6 @@
 <addons>
 
-<addon id="plugin.program.backup" name="[COLOR lime][B]SETTINGS RESTORE[/B][/COLOR]" version="1.0.2" provider-name="MR X">
+<addon id="plugin.program.backup" name="[COLOR lime][B]SETTINGS RESTORE[/B][/COLOR]" version="1.0.5" provider-name="MR X">
   <requires>
   	<import addon="script.module.requests" />
   </requires>
@@ -16,6 +16,26 @@
         <icon>icon.png</icon>
     </assets>
   </extension>
+</addon>
+
+<addon id="plugin.program.iptv.groups"
+version="0.0.1"
+name="iptv groups"
+provider-name="primaeval">
+<requires>
+  <import addon="xbmc.python" version="2.20.0"/>
+  <import addon="script.module.xbmcswift2" version="2.4.0"/>
+  <import addon="script.module.requests" version="2.9.1" />
+</requires>
+<extension point="xbmc.python.pluginsource" library="main.py">
+  <provides>executable</provides>
+</extension>
+<extension point="xbmc.service" library="server.py" start="login"/>
+<extension point="xbmc.addon.metadata">
+  <summary lang="en">create new m3u filtered by group</summary>
+  <description lang="en"></description>
+  <disclaimer lang="en"></disclaimer>
+</extension>
 </addon>
 
 
@@ -70,11 +90,12 @@ Thanks to all Devs who have contributed to this project!</description>
 </addon>
 
 
-<addon id="plugin.video.kemo" name="[COLOR lime]kemo IPTV[/COLOR]" version="0.0.2" provider-name="X">
+<addon id="plugin.video.kemo" name="[COLOR lime]KEMO IPTV[/COLOR]" version="1.0.5" provider-name="X">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.requests" />
 	<import addon="pvr.iptvsimple" />
+	<import addon="plugin.program.iptv.groups" />
   </requires>
   <extension point="xbmc.python.pluginsource"
             library="default.py">

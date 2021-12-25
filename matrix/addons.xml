@@ -1,6 +1,6 @@
 <addons>
 
-<addon id="plugin.program.backup" name="[COLOR lime][B]SETTINGS RESTORE[/B][/COLOR]" version="2.0.6" provider-name="MR X">
+<addon id="plugin.program.backup" name="[COLOR lime][B]SETTINGS RESTORE[/B][/COLOR]" version="2.0.7" provider-name="MR X">
   <requires>
   	<import addon="script.module.requests" />
   </requires>

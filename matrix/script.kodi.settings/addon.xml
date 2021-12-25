@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.kodi.settings" name="[COLOR lime][B]BOX SETTINGS[/B][/COLOR]" version="0.0.2" provider-name="X">
+    <requires>
+    </requires>
+    <extension point="xbmc.python.script" library="addon.py">
+            <provides>executable video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <description lang="en">Configure all your settings in one spot</description>
+        <disclaimer lang="en"></disclaimer>
+        <language></language>
+        <platform>all</platform>
+    <assets>
+        <icon>icon.png</icon>
+    </assets>
+  </extension>
+</addon>

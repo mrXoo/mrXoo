@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.addon.importer.linux" name="[COLOR lime] Matrix Addon Importer[/COLOR]" version="2.0.1" provider-name="X">
+<addon id="script.addon.importer.linux" name="[COLOR lime] Matrix Addon Importer[/COLOR]" version="2.0.2" provider-name="X">
   <requires>
+  	<import addon="script.kodi.settings" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="service.py">
         <provides>executable</provides>

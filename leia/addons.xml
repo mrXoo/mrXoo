@@ -200,9 +200,27 @@ provider-name="jurialmunkey">
     </extension>
 </addon>
 
-<addon id="script.addon.importer.linux" name="[COLOR lime]Leia Addon Importer[/COLOR]" version="1.0.1" provider-name="X">
+<addon id="script.kodi.settings" name="[COLOR lime][B]BOX SETTINGS[/B][/COLOR]" version="0.0.2" provider-name="X">
+    <requires>
+    </requires>
+    <extension point="xbmc.python.script" library="addon.py">
+            <provides>executable video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <description lang="en">Configure all your settings in one spot</description>
+        <disclaimer lang="en"></disclaimer>
+        <language></language>
+        <platform>all</platform>
+    <assets>
+        <icon>icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="script.addon.importer.linux" name="[COLOR lime]Leia Addon Importer[/COLOR]" version="1.0.2" provider-name="X">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
+  	<import addon="script.kodi.settings" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="service.py">
         <provides>executable</provides>

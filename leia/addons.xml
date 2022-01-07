@@ -274,7 +274,7 @@ provider-name="jurialmunkey">
     </extension>
 </addon>
 
-<addon id="script.kodi.settings" name="[COLOR lime][B]BOX SETTINGS[/B][/COLOR]" version="0.0.3" provider-name="X">
+<addon id="script.kodi.settings" name="[COLOR lime][B]BOX SETTINGS[/B][/COLOR]" version="0.0.4" provider-name="X">
     <requires>
     </requires>
     <extension point="xbmc.python.script" library="addon.py">

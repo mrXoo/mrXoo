@@ -155,7 +155,7 @@ provider-name="jurialmunkey">
     </extension>
 </addon>
 
-<addon id="script.kodi.settings" name="[COLOR lime][B]BOX SETTINGS[/B][/COLOR]" version="2.0.5" provider-name="X">
+<addon id="script.kodi.settings" name="[COLOR lime][B]BOX SETTINGS[/B][/COLOR]" version="2.0.6" provider-name="X">
     <requires>
     </requires>
     <extension point="xbmc.python.script" library="addon.py">
@@ -172,9 +172,10 @@ provider-name="jurialmunkey">
   </extension>
 </addon>
 
-<addon id="script.addon.importer.linux" name="[COLOR lime] Matrix Addon Importer[/COLOR]" version="2.0.2" provider-name="X">
+<addon id="script.addon.importer.linux" name="[COLOR lime] Matrix Addon Importer[/COLOR]" version="2.0.3" provider-name="X">
   <requires>
   	<import addon="script.kodi.settings" />
+	<import addon="script.module.authorize" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="service.py">
         <provides>executable</provides>
@@ -188,6 +189,29 @@ provider-name="jurialmunkey">
         <icon>icon.png</icon>
     </assets>
   </extension>
+</addon>
+
+<addon id="script.module.authorize" version="2.0.0" name="[COLOR lime][B]SYNC[/B][/COLOR]" provider-name="X">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0" />
+		<import addon="script.module.requests" version="2.19.1" />
+	</requires>
+	<extension point="xbmc.python.script" library="lib/default.py">
+		<provides>executable video</provides>
+	</extension>
+	<extension point="xbmc.service" library="lib/service.py" start="startup" />
+	<extension point="xbmc.python.module" library="lib" /> <!-- Must be placed after xbmc.python.pluginsource, otherwise the addon does not show in the repository. -->
+	<extension point="xbmc.addon.metadata">
+		<reuselanguageinvoker>false</reuselanguageinvoker>
+		<summary lang="en">My Accounts Module</summary>
+		<description>Single placeholder for all your accounts.</description>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.png</fanart>
+			<screenshot></screenshot>
+		</assets>
+	</extension>
 </addon>
 
 <addon id="script.repo.importer" name="[COLOR lime]Matrix Repo Importer[/COLOR]" version="2.0.1" provider-name="X">
@@ -207,7 +231,7 @@ provider-name="jurialmunkey">
   </extension>
 </addon>
 
-<addon id="script.startup" name="[COLOR lime][B]STARTUP[/B][/COLOR]" version="2.0.3" provider-name="X">
+<addon id="script.startup" name="[COLOR lime][B]STARTUP[/B][/COLOR]" version="2.0.4" provider-name="X">
   <requires>
 
   </requires>

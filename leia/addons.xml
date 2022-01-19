@@ -308,7 +308,7 @@ provider-name="jurialmunkey">
   </extension>
 </addon>
 
-<addon id="script.module.authorize" version="1.0.0" name="[COLOR lime][B]SYNC[/B][/COLOR]" provider-name="X">
+<addon id="script.module.authorize" version="1.0.1" name="[COLOR lime][B]SYNC[/B][/COLOR]" provider-name="X">
 	<requires>
 		<import addon="script.module.requests" version="2.19.1" />
 	</requires>

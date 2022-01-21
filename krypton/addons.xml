@@ -74,7 +74,8 @@ Thanks to all Devs who have contributed to this project!</description>
   </extension>
 </addon>
 
-<addon id="plugin.program.lebuildrestore" name="[COLOR lime][B]KRYPTON RESTORE[/B][/COLOR]" version="1.9.1" provider-name="MR ED REPO">
+
+<addon id="plugin.program.lebuildrestore" name="[COLOR lime][B]KRYPTON RESTORE[/B][/COLOR]" version="2.0.0" provider-name="MR ED REPO">
   <requires>
     <import addon="xbmc.gui" version="5.12.0"/>
   	<import addon="script.module.requests" />

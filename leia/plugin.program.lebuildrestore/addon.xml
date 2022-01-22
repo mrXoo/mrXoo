@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.program.lebuildrestore" name="[COLOR lime][B]LEIA RESTORE[/B][/COLOR]" version="2.0.3" provider-name="MR X">
+<addon id="plugin.program.lebuildrestore" name="[COLOR lime][B]KRYPTON RESTORE[/B][/COLOR]" version="2.0.3a" provider-name="MR ED REPO">
   <requires>
-    <import addon="xbmc.gui" version="5.14.0"/>
   	<import addon="script.module.requests" />
-  	<import addon="plugin.program.cerestore" />
-  	<import addon="script.startup" />
-  	<import addon="plugin.program.backup" />
-  	<import addon="plugin.program.cefirmware" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>executable</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">LEIA Restore</summary>
-    <description lang="en">LEIA RESTORE</description>
+    <description lang="en">Restore KRYPTON </description>
     <platform>all</platform>
   </extension>
 </addon>

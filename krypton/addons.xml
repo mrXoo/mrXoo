@@ -75,7 +75,7 @@ Thanks to all Devs who have contributed to this project!</description>
 </addon>
 
 
-<addon id="plugin.program.lebuildrestore" name="[COLOR lime][B]KRYPTON RESTORE[/B][/COLOR]" version="2.0.4" provider-name="MR ED REPO">
+<addon id="plugin.program.lebuildrestore" name="[COLOR lime][B]KRYPTON RESTORE[/B][/COLOR]" version="2.0.4a" provider-name="MR ED REPO">
   <requires>
   	<import addon="script.module.requests" />
   </requires>

@@ -269,7 +269,7 @@ provider-name="jurialmunkey">
     </extension>
 </addon>
 
-<addon id="script.kodi.settings" name="[COLOR lime][B]BOX SETTINGS[/B][/COLOR]" version="0.0.9" provider-name="X">
+<addon id="script.kodi.settings" name="[COLOR lime][B]BOX SETTINGS[/B][/COLOR]" version="0.0.10" provider-name="X">
     <requires>
     </requires>
     <extension point="xbmc.python.script" library="addon.py">
@@ -303,7 +303,7 @@ provider-name="jurialmunkey">
   </extension>
 </addon>
 
-<addon id="script.module.authorize" version="1.0.1" name="[COLOR lime][B]SYNC[/B][/COLOR]" provider-name="X">
+<addon id="script.module.authorize" version="1.0.2" name="[COLOR lime][B]SYNC[/B][/COLOR]" provider-name="X">
 	<requires>
 		<import addon="script.module.requests" version="2.19.1" />
 	</requires>
@@ -334,7 +334,7 @@ provider-name="jurialmunkey">
 	</extension>
 </addon>
 
-<addon id="script.repo.importer" name="[COLOR lime]Leia Repo Importer[/COLOR]" version="1.0.1" provider-name="X">
+<addon id="script.repo.importer" name="[COLOR lime]Leia Repo Importer[/COLOR]" version="1.0.2" provider-name="X">
   <requires>
   </requires>
   <extension point="xbmc.python.pluginsource" library="service.py">

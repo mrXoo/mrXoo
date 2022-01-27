@@ -351,9 +351,9 @@ provider-name="jurialmunkey">
   </extension>
 </addon>
 
-<addon id="script.startup" name="[COLOR lime][B]STARTUP[/B][/COLOR]" version="1.0.4" provider-name="X">
+<addon id="script.startup" name="[COLOR lime][B]STARTUP[/B][/COLOR]" version="1.0.5" provider-name="X">
   <requires>
-
+    <import addon="script.module.requests" version="1.0.0" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
         <provides></provides>
@@ -365,6 +365,7 @@ provider-name="jurialmunkey">
     <platform>all</platform>
   </extension>
 </addon>
+
 
 
 

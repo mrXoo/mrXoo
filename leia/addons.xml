@@ -145,7 +145,7 @@
 </addon>
 
 <addon id="plugin.program.iptv.groups"
-version="0.0.2"
+version="0.0.3"
 name="iptv groups"
 provider-name="primaeval">
 <requires>
@@ -166,7 +166,7 @@ provider-name="primaeval">
 
 
 <addon id="plugin.program.iptv.groupsfull"
-version="0.0.2"
+version="0.0.3"
 name="iptv groups full"
 provider-name="primaeval">
 <requires>
@@ -185,7 +185,7 @@ provider-name="primaeval">
 </extension>
 </addon>
 
-<addon id="plugin.program.kemo" name="[COLOR lime]INSTALL KEMO[/COLOR]" version="2.0.2" provider-name="X">
+<addon id="plugin.program.kemo" name="[COLOR lime]INSTALL KEMO[/COLOR]" version="2.0.3" provider-name="X">
   <requires>
 	<import addon="script.module.requests" />	
   </requires>
@@ -204,13 +204,14 @@ provider-name="primaeval">
   </extension>
 </addon>
 
-<addon id="plugin.video.kemo" name="[COLOR lime]KEMO IPTV[/COLOR]" version="1.0.8" provider-name="X">
+<addon id="plugin.video.kemo" name="[COLOR lime]KEMO IPTV[/COLOR]" version="1.0.9" provider-name="X">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.requests" />
 	<import addon="pvr.iptvsimple" />
 	<import addon="plugin.program.iptv.groups" />
 	<import addon="plugin.program.iptv.groupsfull" />
+	<import addon="pvr.demo" />
   </requires>
   <extension point="xbmc.python.pluginsource"
             library="default.py">

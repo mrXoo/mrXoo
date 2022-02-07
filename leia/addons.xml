@@ -166,7 +166,7 @@ provider-name="primaeval">
 
 
 <addon id="plugin.program.iptv.groupsfull"
-version="0.0.3"
+version="0.0.3a"
 name="iptv groups full"
 provider-name="primaeval">
 <requires>

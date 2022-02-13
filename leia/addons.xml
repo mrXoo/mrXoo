@@ -328,11 +328,13 @@ provider-name="jurialmunkey">
   </extension>
 </addon>
 
-<addon id="script.addon.importer.linux" name="[COLOR lime]Leia Addon Importer[/COLOR]" version="1.0.2" provider-name="X">
+<addon id="script.addon.importer.linux" name="[COLOR lime]Leia Addon Importer[/COLOR]" version="1.0.4" provider-name="X">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   	<import addon="script.kodi.settings" />
   	<import addon="script.module.authorize" />
+	<import addon="plugin.video.wolfpack" />
+	<import addon="plugin.video.700" />	
   </requires>
   <extension point="xbmc.python.pluginsource" library="service.py">
         <provides>executable</provides>
@@ -376,7 +378,7 @@ provider-name="jurialmunkey">
 	</extension>
 </addon>
 
-<addon id="script.repo.importer" name="[COLOR lime]Leia Repo Importer[/COLOR]" version="1.0.3" provider-name="X">
+<addon id="script.repo.importer" name="[COLOR lime]Leia Repo Importer[/COLOR]" version="1.0.4" provider-name="X">
   <requires>
   </requires>
   <extension point="xbmc.python.pluginsource" library="service.py">

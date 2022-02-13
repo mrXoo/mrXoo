@@ -277,11 +277,13 @@ provider-name="jurialmunkey">
   </extension>
 </addon>
 
-<addon id="script.addon.importer.linux" name="[COLOR lime] Matrix Addon Importer[/COLOR]" version="2.0.4" provider-name="X">
+<addon id="script.addon.importer.linux" name="[COLOR lime] Matrix Addon Importer[/COLOR]" version="2.0.5" provider-name="X">
   <requires>
   	<import addon="script.kodi.settings" />
 	<import addon="script.module.authorize" />
 	<import addon="plugin.program.super.favourites" />
+	<import addon="plugin.video.wolfpack" />
+	<import addon="plugin.video.700" />	
   </requires>
   <extension point="xbmc.python.pluginsource" library="service.py">
         <provides>executable</provides>
@@ -320,7 +322,7 @@ provider-name="jurialmunkey">
 	</extension>
 </addon>
 
-<addon id="script.repo.importer" name="[COLOR lime]Matrix Repo Importer[/COLOR]" version="2.0.3" provider-name="X">
+<addon id="script.repo.importer" name="[COLOR lime]Matrix Repo Importer[/COLOR]" version="2.0.4" provider-name="X">
   <requires>
   </requires>
   <extension point="xbmc.python.pluginsource" library="service.py">

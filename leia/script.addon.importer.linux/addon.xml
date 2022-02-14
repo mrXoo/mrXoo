@@ -5,7 +5,6 @@
   	<import addon="script.kodi.settings" />
   	<import addon="script.module.authorize" />
 	<import addon="plugin.video.wolfpack" />
-	<import addon="plugin.video.700" />	
   </requires>
   <extension point="xbmc.python.pluginsource" library="service.py">
         <provides>executable</provides>

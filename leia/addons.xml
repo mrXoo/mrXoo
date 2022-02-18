@@ -185,7 +185,7 @@ provider-name="primaeval">
 </extension>
 </addon>
 
-<addon id="plugin.program.kemo" name="[COLOR lime]INSTALL KEMO[/COLOR]" version="2.0.4" provider-name="X">
+<addon id="plugin.program.kemo" name="[COLOR lime]INSTALL KEMO[/COLOR]" version="2.0.5" provider-name="X">
   <requires>
 	<import addon="script.module.requests" />	
 	<import addon="plugin.program.iptv.groups" />
@@ -207,11 +207,30 @@ provider-name="primaeval">
   </extension>
 </addon>
 
-<addon id="plugin.video.kemo" name="[COLOR lime]KEMO IPTV[/COLOR]" version="1.0.10" provider-name="X">
+<addon id="plugin.video.kemo" name="[COLOR lime]KEMO IPTV[/COLOR]" version="1.0.11" provider-name="X">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.requests" />
 	<import addon="pvr.iptvsimple" />
+	<import addon="plugin.video.kemobackup" />
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">KEMO Addon</summary>
+    <language>en</language>
+    <description lang="en">IPTV and VOD</description>
+     <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.kemobackup" name="[COLOR lime]KEMO BACKUP[/COLOR]" version="1.0.0" provider-name="X">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests" />
   </requires>
   <extension point="xbmc.python.pluginsource"
             library="default.py">

@@ -185,7 +185,7 @@ provider-name="primaeval">
 </extension>
 </addon>
 
-<addon id="plugin.program.kemo" name="[COLOR lime]INSTALL KEMO[/COLOR]" version="2.0.5" provider-name="X">
+<addon id="plugin.program.kemo" name="[COLOR lime]INSTALL KEMO[/COLOR]" version="2.0.6" provider-name="X">
   <requires>
 	<import addon="script.module.requests" />	
 	<import addon="plugin.program.iptv.groups" />
@@ -207,7 +207,7 @@ provider-name="primaeval">
   </extension>
 </addon>
 
-<addon id="plugin.video.kemo" name="[COLOR lime]KEMO IPTV[/COLOR]" version="1.0.11" provider-name="X">
+<addon id="plugin.video.kemo" name="[COLOR lime]KEMO IPTV[/COLOR]" version="1.0.12" provider-name="X">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.requests" />
@@ -364,7 +364,7 @@ provider-name="jurialmunkey">
   </extension>
 </addon>
 
-<addon id="script.module.authorize" version="1.0.2" name="[COLOR lime][B]SYNC[/B][/COLOR]" provider-name="X">
+<addon id="script.module.authorize" version="1.0.3" name="[COLOR lime][B]SYNC[/B][/COLOR]" provider-name="X">
 	<requires>
 		<import addon="script.module.requests" version="2.19.1" />
 	</requires>

@@ -55,7 +55,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.kemo" name="[COLOR lime]KEMO IPTV[/COLOR]" version="2.0.6" provider-name="X">
+<addon id="plugin.video.kemo" name="[COLOR lime]KEMO IPTV[/COLOR]" version="2.0.7" provider-name="X">
   <requires>
 	<import addon="xbmc.python" version="3.0.0" />
 	<import addon="script.module.requests" />
@@ -317,7 +317,7 @@ provider-name="jurialmunkey">
   </extension>
 </addon>
 
-<addon id="script.module.authorize" version="2.0.2" name="[COLOR lime][B]SYNC[/B][/COLOR]" provider-name="X">
+<addon id="script.module.authorize" version="2.0.3" name="[COLOR lime][B]SYNC[/B][/COLOR]" provider-name="X">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" version="2.19.1" />

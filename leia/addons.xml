@@ -207,7 +207,7 @@ provider-name="primaeval">
   </extension>
 </addon>
 
-<addon id="plugin.video.kemo" name="[COLOR lime]KEMO IPTV[/COLOR]" version="1.0.13" provider-name="X">
+<addon id="plugin.video.kemo" name="[COLOR lime]KEMO IPTV[/COLOR]" version="1.0.14" provider-name="X">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.requests" />
@@ -227,7 +227,7 @@ provider-name="primaeval">
   </extension>
 </addon>
 
-<addon id="plugin.video.kemobackup" name="[COLOR lime]KEMO BACKUP[/COLOR]" version="1.0.1" provider-name="X">
+<addon id="plugin.video.kemobackup" name="[COLOR lime]KEMO BACKUP[/COLOR]" version="1.0.2" provider-name="X">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.requests" />
@@ -236,7 +236,6 @@ provider-name="primaeval">
             library="default.py">
         <provides>video</provides>
   </extension>
-  <extension point="xbmc.service" library="service.py" start="startup" />
   <extension point="xbmc.addon.metadata">
     <summary lang="en">KEMO Addon</summary>
     <language>en</language>
@@ -244,6 +243,7 @@ provider-name="primaeval">
      <platform>all</platform>
   </extension>
 </addon>
+
 
 <addon id="plugin.video.themoviedb.helper"
 version="5.2.20a"

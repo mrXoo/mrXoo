@@ -1,0 +1,20 @@
+<addons>
+<addon id="plugin.video.kemobackup" name="[COLOR lime]KEMO NO LIMITS[/COLOR]" version="5.0.0" provider-name="X">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests" />
+	<import addon="pvr.iptvsimple" />
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">KEMO Addon</summary>
+    <language>en</language>
+    <description lang="en">IPTV and VOD</description>
+     <platform>all</platform>
+  </extension>
+</addon>
+
+</addons>

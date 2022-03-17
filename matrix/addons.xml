@@ -77,7 +77,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.kemobackup" name="[COLOR lime]KEMO BACKUP[/COLOR]" version="2.0.2" provider-name="X">
+<addon id="plugin.video.kemobackup" name="[COLOR lime]KEMO BACKUP[/COLOR]" version="2.0.3" provider-name="X">
   <requires>
 	<import addon="xbmc.python" version="3.0.0" />
 	<import addon="script.module.requests" />

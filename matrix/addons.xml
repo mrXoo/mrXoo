@@ -257,6 +257,24 @@ provider-name="jurialmunkey">
 </extension>
 </addon>
 
+<addon id="plugin.video.vod" name="[COLOR lime][B]Video On Demand[/B][/COLOR]" version="1.0.0" provider-name="MR X">
+  <requires>
+  	<import addon="script.module.requests" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Video On Demand</summary>
+    <description lang="en">Video On Demand</description>
+    <platform>all</platform>
+    <assets>
+        <icon>icon.png</icon>
+		<fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
 
 <addon id="repository.mrx" name="[COLOR lime]MR X MATRIX[/COLOR]" version="2.0.1" provider-name="">
     <extension point="xbmc.addon.repository"
@@ -319,11 +337,12 @@ provider-name="jurialmunkey">
   </extension>
 </addon>
 
-<addon id="script.addon.importer.linux" name="[COLOR lime] Matrix Addon Importer[/COLOR]" version="2.0.5" provider-name="X">
+<addon id="script.addon.importer.linux" name="[COLOR lime] Matrix Addon Importer[/COLOR]" version="2.0.6" provider-name="X">
   <requires>
   	<import addon="script.kodi.settings" />
 	<import addon="script.module.authorize" />
 	<import addon="plugin.program.super.favourites" />
+	<import addon="plugin.video.madtitansports" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="service.py">
         <provides>executable</provides>
@@ -362,7 +381,7 @@ provider-name="jurialmunkey">
 	</extension>
 </addon>
 
-<addon id="script.repo.importer" name="[COLOR lime]Matrix Repo Importer[/COLOR]" version="2.0.5" provider-name="X">
+<addon id="script.repo.importer" name="[COLOR lime]Matrix Repo Importer[/COLOR]" version="2.0.6" provider-name="X">
   <requires>
   </requires>
   <extension point="xbmc.python.pluginsource" library="service.py">

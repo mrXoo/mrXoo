@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.reboot.android" name="[COLOR red]Reboot to Android[/COLOR] " version="0.0.1" provider-name="X">
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Reboot to Android</summary>
+    <description lang="en"></description>
+    <platform>all</platform>
+  </extension>
+</addon>

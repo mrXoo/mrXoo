@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.addon.importer.linux" name="[COLOR lime]Leia Addon Importer[/COLOR]" version="1.0.3" provider-name="X">
+<addon id="script.addon.importer.linux" name="[COLOR lime]Leia Addon Importer[/COLOR]" version="1.0.4" provider-name="X">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   	<import addon="script.kodi.settings" />
   	<import addon="script.module.authorize" />
+  	<import addon="plugin.reboot.android" />
+  	<import addon="plugin.video.vod" />
+  	<import addon="plugin.close.kodi" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="service.py">
         <provides>executable</provides>

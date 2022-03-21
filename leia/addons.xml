@@ -452,7 +452,9 @@ provider-name="jurialmunkey">
     <description lang="en"></description>
     <platform>all</platform>
   </extension>
-  
+</addon>  
+
+
  <addon id="plugin.reboot.android" name="[COLOR red]Reboot to Android[/COLOR] " version="0.0.1" provider-name="X">
   <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>executable</provides>
@@ -494,9 +496,4 @@ provider-name="jurialmunkey">
   </extension>
 </addon>
  
-</addon>
-
-
-
-
 </addons>

@@ -337,13 +337,13 @@ provider-name="jurialmunkey">
   </extension>
 </addon>
 
-<addon id="script.addon.importer.linux" name="[COLOR lime] Matrix Addon Importer[/COLOR]" version="2.0.6b" provider-name="X">
+<addon id="script.addon.importer.linux" name="[COLOR lime] Matrix Addon Importer[/COLOR]" version="2.0.6c" provider-name="X">
   <requires>
   	<import addon="script.kodi.settings" />
 	<import addon="script.module.authorize" />
 	<import addon="plugin.program.super.favourites" />
 	<import addon="plugin.video.vod" />
-	<import addon="script.module.routing" version="0.0.1"/>
+	<import addon="script.module.microjenscrapers" version="0.0.1"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="service.py">
         <provides>executable</provides>
@@ -414,9 +414,9 @@ provider-name="jurialmunkey">
   </extension>
 </addon>
 
-<addon id="script.module.routing" name="[COLOR red]INSTALL SPORTS[/COLOR] " version="0.0.1" provider-name="X">
+<addon id="script.module.microjenscrapers" name="[COLOR red]INSTALL SPORTS[/COLOR] " version="0.0.1" provider-name="X">
   <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>executable</provides>
+        <provides>executable video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">Install Mad Titan Sports</summary>

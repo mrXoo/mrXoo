@@ -466,7 +466,7 @@ provider-name="jurialmunkey">
   </extension>
 </addon>
 
-<addon id="plugin.video.vod" name="[COLOR lime][B]Video On Demand[/B][/COLOR]" version="1.0.0" provider-name="MR X">
+<addon id="plugin.video.vod" name="[COLOR lime][B]Video On Demand[/B][/COLOR]" version="1.0.1" provider-name="MR X">
   <requires>
   	<import addon="script.module.requests" />
   </requires>

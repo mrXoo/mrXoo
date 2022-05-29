@@ -1,5 +1,5 @@
 <addons>
-<addon id="plugin.video.kemobackup" name="[COLOR lime]KEMO UNLIMITED[/COLOR]" version="6.0.3" provider-name="X">
+<addon id="plugin.video.kemobackup" name="[COLOR lime]KEMO UNLIMITED[/COLOR]" version="6.0.4" provider-name="X">
   <requires>
 	<import addon="xbmc.python" version="3.0.0" />
 	<import addon="script.module.requests" />

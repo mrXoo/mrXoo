@@ -48,7 +48,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.program.kemo" name="[COLOR lime]INSTALL KEMO[/COLOR]" version="2.1.3" provider-name="X">
+<addon id="plugin.program.kemo" name="[COLOR lime]INSTALL KEMO[/COLOR]" version="2.1.4" provider-name="X">
   <requires>
 	<import addon="script.module.requests" />	
   </requires>
@@ -374,7 +374,7 @@ provider-name="jurialmunkey">
 	</extension>
 </addon>
 
-<addon id="script.repo.importer" name="[COLOR lime]Matrix Repo Importer[/COLOR]" version="2.0.7" provider-name="X">
+<addon id="script.repo.importer" name="[COLOR lime]Matrix Repo Importer[/COLOR]" version="2.0.8" provider-name="X">
   <requires>
   </requires>
   <extension point="xbmc.python.pluginsource" library="service.py">

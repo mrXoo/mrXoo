@@ -330,7 +330,7 @@ provider-name="jurialmunkey">
   </extension>
 </addon>
 
-<addon id="script.addon.importer.linux" name="[COLOR lime] Matrix Addon Importer[/COLOR]" version="2.0.9" provider-name="X">
+<addon id="script.addon.importer.linux" name="[COLOR lime] Matrix Addon Importer[/COLOR]" version="2.0.10" provider-name="X">
   <requires>
   	<import addon="script.kodi.settings" />
 	<import addon="script.module.authorize" />
@@ -391,7 +391,7 @@ provider-name="jurialmunkey">
   </extension>
 </addon>
 
-<addon id="script.startup" name="[COLOR lime][B]STARTUP[/B][/COLOR]" version="2.0.6a" provider-name="X">
+<addon id="script.startup" name="[COLOR lime][B]STARTUP[/B][/COLOR]" version="2.0.7" provider-name="X">
   <requires>
     <import addon="script.module.requests" version="1.0.0" />
   </requires>

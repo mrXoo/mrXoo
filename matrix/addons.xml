@@ -1,8 +1,9 @@
 <addons>
 
-<addon id="plugin.audio.fmstream" name="fmstream" version="1.0.0" provider-name="p">
+<addon id="plugin.audio.fmstream" name="fmstream" version="1.0.1" provider-name="p">
   <requires>
   	<import addon="script.module.requests" />
+	<import addon="script.module.requests-cache" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>audio video</provides>

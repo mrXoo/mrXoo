@@ -106,25 +106,6 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.kemobackup" name="[COLOR lime]KEMO BACKUP[/COLOR]" version="2.0.5" provider-name="X">
-  <requires>
-	<import addon="xbmc.python" version="3.0.0" />
-	<import addon="script.module.requests" />
-
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Kemo Addon</summary>
-    <language>en</language>
-    <description lang="en">IPTV and VOD for Kodi Matrix</description>
-    <platform>all</platform>
-    <assets>
-        <icon>icon.png</icon>
-    </assets>
-  </extension>
-</addon>
 
 <addon id="plugin.program.super.favourites" name="Super Favourites" version="2.1.0" provider-name="jmooremcc, spoyser">
   <requires>
@@ -272,27 +253,6 @@ provider-name="jurialmunkey">
     </extension>
 </addon>
 
-<addon id="repository.nolimits" name="[COLOR lime]NO LIMITS[/COLOR]" version="1.0.0" provider-name="">
-    <extension point="xbmc.addon.repository"
-        name="X">
-        <dir minversion="18.0.0">
-            <info compressed="false">https://raw.githubusercontent.com/mrXoo/mrXoo/master/nolimits/leia/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/mrXoo/mrXoo/master/nolimits/leia/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/mrXoo/mrXoo/master/nolimits/leia/</datadir>
-        </dir>				
-        <dir minversion="19.0.0">
-            <info compressed="false">https://raw.githubusercontent.com/mrXoo/mrXoo/master/nolimits/matrix/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/mrXoo/mrXoo/master/nolimits/matrix/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/mrXoo/mrXoo/master/nolimits/matrix/</datadir>
-        </dir>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-			<assets>
-    </assets>
-    </extension>
-</addon>
-
 <addon id="script.kodi.settings" name="[COLOR lime][B]BOX SETTINGS[/B][/COLOR]" version="2.0.9" provider-name="X">
     <requires>
     </requires>
@@ -310,13 +270,14 @@ provider-name="jurialmunkey">
   </extension>
 </addon>
 
-<addon id="script.addon.importer.linux" name="[COLOR lime] Matrix Addon Importer[/COLOR]" version="2.0.11" provider-name="X">
+<addon id="script.addon.importer.linux" name="[COLOR lime] Matrix Addon Importer[/COLOR]" version="2.0.11a" provider-name="X">
   <requires>
   	<import addon="script.kodi.settings" />
 	<import addon="script.module.authorize" />
 	<import addon="plugin.program.super.favourites" />
 	<import addon="plugin.close.kodi" />
 	<import addon="plugin.audio.fmstream" />
+	<import addon="plugin.video.themoviedb.helper" version="5.0.19" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="service.py">
         <provides>executable</provides>

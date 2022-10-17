@@ -1,93 +1,5 @@
 <addons>
 
-<addon id="plugin.video.fen" name="Fen" provider-name="Tiki" version="2.5.0">
-    <requires>
-        <import addon="script.module.requests" version="2.19.1" />
-        <import addon="script.module.pil" version="1.1.7" />
-        <import addon="script.tikiart" version="1.0.0" />
-        <import addon="script.module.myaccounts" version="0.0.0" />
-        <import addon="script.module.fenomscrapers" version="0.0.0" />
-    </requires>
-    <extension library="resources/lib/fen.py" point="xbmc.python.pluginsource">
-        <provides>video</provides>
-    </extension>
-    <extension library="resources/lib/service.py" point="xbmc.service" />
-    <extension library="resources/lib/" point="xbmc.python.module" />
-    <extension point="kodi.context.item">
-        <menu id="kodi.core.main">
-            <item library="resources/contextmenu/refresh_widgets.py">
-                <label>40001</label>
-                <visible>String.IsEqual(ListItem.Property(fen_widget),true)</visible>
-            </item>
-            <item library="resources/contextmenu/mark_watched.py">
-                <label>40003</label>
-                <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode)] + String.IsEqual(ListItem.Property(fen_widget),true) + String.IsEqual(ListItem.Property(fen_playcount),0)</visible>
-            </item>
-            <item library="resources/contextmenu/mark_unwatched.py">
-                <label>40004</label>
-                <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode)] + String.IsEqual(ListItem.Property(fen_widget),true) + String.IsEqual(ListItem.Property(fen_playcount),1)</visible>
-            </item>
-            <item library="resources/contextmenu/clear_progress.py">
-                <label>40009</label>
-                <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode)] + String.IsEqual(ListItem.Property(fen_widget),true) + String.IsEqual(ListItem.Property(fen_in_progress),true)</visible>
-            </item>
-            <item library="resources/contextmenu/browse.py">
-                <label>40002</label>
-                <visible>String.IsEqual(ListItem.dbtype,episode) + String.IsEqual(ListItem.Property(fen_widget),true)</visible>
-            </item>
-            <item library="resources/contextmenu/trakt_manager.py">
-                <label>40005</label>
-                <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow)] + String.IsEqual(ListItem.Property(fen_widget),true)</visible>
-            </item>
-            <item library="resources/contextmenu/favorites_manager.py">
-                <label>40008</label>
-                <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow)] + String.IsEqual(ListItem.Property(fen_widget),true)</visible>
-            </item>
-            <item library="resources/contextmenu/play_random.py">
-                <label>40010</label>
-                <visible>[String.IsEqual(ListItem.dbtype,tvshow)] + String.IsEqual(ListItem.Property(fen_widget),true)</visible>
-            </item>
-            <item library="resources/contextmenu/options.py">
-                <label>40007</label>
-                <visible>String.IsEqual(ListItem.Property(fen_widget),true)</visible>
-            </item>
-            <item library="resources/contextmenu/extras.py">
-                <label>40006</label>
-                <visible>String.IsEqual(ListItem.Property(fen_widget),true)</visible>
-            </item>
-        </menu>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <reuselanguageinvoker>true</reuselanguageinvoker>
-        <summary lang="en">Mainly used for Furk and Easynews.</summary>
-        <description lang="en">This add-on is intended for advanced Kodi users only. Mainly used for Furk and Easynews(web) account access. Also utilizes Fenomscrapers for those without a Furk or Easynews(web) account. You must have a debrid service to use this add-on without Furk/Easynews.[CR][CR][B]Please Note: This add-on is NOT an Exodus fork, and as such will behave differently to an Exodus fork.[/B]</description>
-        <platform>all</platform>
-		<disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
-        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.png</fanart>
-        </assets>
-        <news>INFO: For latest changes see Changelog within Tools of add-on.</news>
-    </extension>
-</addon>
-
-
-<!--  DELETE THIS ADDON AT SOME POINT !-->
-<addon id="plugin.program.lebuildrestore" name="[COLOR lime][B]KRYPTON RESTORE[/B][/COLOR]" version="2.0.4c" provider-name="MR ED REPO">
-  <requires>
-  	<import addon="script.module.requests" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.service" library="startup.py" start="startup" />
-  <extension point="xbmc.addon.metadata">
-    <description lang="en">Restore KRYPTON </description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
 
 <addon id="plugin.program.backup" name="[COLOR lime][B]SETTINGS RESTORE[/B][/COLOR]" version="1.0.9" provider-name="MR X">
   <requires>
@@ -100,24 +12,6 @@
   <extension point="xbmc.addon.metadata">
     <summary lang="en">Auto Backup and manual Restore all your personal settings like streaming addons and wifi settings</summary>
     <description lang="en">Auto Backup and manual Restore all your personal settings like streaming addons and wifi settings</description>
-    <platform>all</platform>
-    <assets>
-        <icon>icon.png</icon>
-    </assets>
-  </extension>
-</addon>
-
-<addon id="plugin.program.cefirmware" name="[COLOR lime][B]UPGRADE BOX[/B][/COLOR]" version="1.0.2a" provider-name="MR X">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-  	<import addon="script.module.requests" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">CoreELEC Firmware Update</summary>
-    <description lang="en">Update box to matrix then install the matrix build in one operation.</description>
     <platform>all</platform>
     <assets>
         <icon>icon.png</icon>
@@ -230,23 +124,6 @@ provider-name="primaeval">
   </extension>
 </addon>
 
-<addon id="plugin.video.kemobackup" name="[COLOR lime]KEMO BACKUP[/COLOR]" version="1.0.6" provider-name="X">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.requests" />
-  </requires>
-  <extension point="xbmc.python.pluginsource"
-            library="default.py">
-        <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">KEMO Addon</summary>
-    <language>en</language>
-    <description lang="en">IPTV and VOD</description>
-     <platform>all</platform>
-  </extension>
-</addon>
-
 
 <addon id="plugin.video.themoviedb.helper"
 version="5.2.20a"
@@ -333,26 +210,6 @@ provider-name="jurialmunkey">
     </extension>
 </addon>
 
-<addon id="repository.nolimits" name="[COLOR lime]NO LIMITS[/COLOR]" version="1.0.0" provider-name="">
-    <extension point="xbmc.addon.repository"
-        name="X">
-        <dir minversion="18.0.0">
-            <info compressed="false">https://raw.githubusercontent.com/mrXoo/mrXoo/master/nolimits/leia/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/mrXoo/mrXoo/master/nolimits/leia/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/mrXoo/mrXoo/master/nolimits/leia/</datadir>
-        </dir>				
-        <dir minversion="19.0.0">
-            <info compressed="false">https://raw.githubusercontent.com/mrXoo/mrXoo/master/nolimits/matrix/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/mrXoo/mrXoo/master/nolimits/matrix/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/mrXoo/mrXoo/master/nolimits/matrix/</datadir>
-        </dir>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-			<assets>
-    </assets>
-    </extension>
-</addon>
 
 <addon id="script.kodi.settings" name="[COLOR lime][B]BOX SETTINGS[/B][/COLOR]" version="0.0.10" provider-name="X">
     <requires>
@@ -465,24 +322,6 @@ provider-name="jurialmunkey">
   </extension>
 </addon>
 
-<addon id="plugin.video.vod" name="[COLOR lime][B]Video On Demand[/B][/COLOR]" version="1.0.1" provider-name="MR X">
-  <requires>
-  	<import addon="script.module.requests" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-  </extension>
-  <extension point="xbmc.service" library="service.py" start="startup" />
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Video On Demand</summary>
-    <description lang="en">Video On Demand</description>
-    <platform>all</platform>
-    <assets>
-        <icon>icon.png</icon>
-		<fanart>fanart.jpg</fanart>
-    </assets>
-  </extension>
-</addon>
 
 <addon id="plugin.close.kodi" name="[COLOR red] Force Close Kodi[/COLOR] " version="3.1.3" provider-name="Based_Skid">
   <extension point="xbmc.python.pluginsource" library="default.py">
@@ -494,33 +333,6 @@ provider-name="jurialmunkey">
     <platform>all</platform>
   </extension>
 </addon>
- 
-<addon id="plugin.video.shadow"                                                                                                                                    
-	   name="Shadow"                                                 
-	   version="3.0.8a"                                                                                                                                        
-	   provider-name="Darkness">
-  <requires>
-	
-  </requires>
-  <extension point="xbmc.python.pluginsource"
-            library="default.py">
-        <provides>video</provides>
-  </extension>
-  <extension library="resources/modules/" point="xbmc.python.module" />
-  <extension library="resources/sources/" point="xbmc.python.module" />
-  <extension library="resources/" point="xbmc.python.module" />
-  <extension point="xbmc.addon.metadata">
-	<reuselanguageinvoker>true</reuselanguageinvoker>
-    <summary lang="en">The single light in the Darkness</summary>
-    <description lang="en">All the media as fast as possible</description>
-	
-    <platform>all</platform>
-	<assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-    </assets>
-  </extension>
-  
-</addon>
+
  
 </addons>

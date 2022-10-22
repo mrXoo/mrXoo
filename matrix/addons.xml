@@ -195,7 +195,7 @@
 </addon>
 
 <addon id="plugin.video.themoviedb.helper"
-version="5.0.19"
+version="5.0.19a"
 name="TheMovieDb Helper"
 provider-name="jurialmunkey">
 <requires>
@@ -293,7 +293,7 @@ provider-name="jurialmunkey">
   </extension>
 </addon>
 
-<addon id="script.module.authorize" version="2.1.0" name="[COLOR lime][B]SYNC[/B][/COLOR]" provider-name="X">
+<addon id="script.module.authorize" version="2.1.1" name="[COLOR lime][B]SYNC[/B][/COLOR]" provider-name="X">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" version="2.19.1" />

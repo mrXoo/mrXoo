@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.addon.importer.linux" name="[COLOR lime] Matrix Addon Importer[/COLOR]" version="2.0.11b" provider-name="X">
+<addon id="script.addon.importer.linux" name="[COLOR lime] Matrix Addon Importer[/COLOR]" version="2.0.12" provider-name="X">
   <requires>
 	<import addon="xbmc.python" version="3.0.0" />
   	<import addon="script.kodi.settings" />
@@ -7,7 +7,8 @@
 	<import addon="plugin.program.super.favourites" />
 	<import addon="plugin.close.kodi" />
 	<import addon="plugin.audio.fmstream" />
-	<import addon="plugin.video.themoviedb.helper" version="6.0.19a" />
+	<import addon="plugin.video.themoviedb.helper" version="6.0.20" />
+	<import addon="script.trakt" version="4.5.0" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="service.py">
         <provides>executable</provides>

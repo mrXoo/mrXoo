@@ -7,7 +7,7 @@
 	<import addon="plugin.program.super.favourites" />
 	<import addon="plugin.close.kodi" />
 	<import addon="plugin.audio.fmstream" />
-	<import addon="plugin.video.themoviedb.helper" version="5.0.19a" />
+	<import addon="plugin.video.themoviedb.helper" version="6.0.19a" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="service.py">
         <provides>executable</provides>

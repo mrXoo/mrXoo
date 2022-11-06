@@ -336,7 +336,7 @@ provider-name="jurialmunkey">
   </extension>
 </addon>
 
-<addon id="script.addon.importer.linux" name="[COLOR lime] Matrix Addon Importer[/COLOR]" version="2.0.12" provider-name="X">
+<addon id="script.addon.importer.linux" name="[COLOR lime] Matrix Addon Importer[/COLOR]" version="2.0.13" provider-name="X">
   <requires>
 	<import addon="xbmc.python" version="3.0.0" />
   	<import addon="script.kodi.settings" />

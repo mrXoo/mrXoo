@@ -339,7 +339,7 @@ provider-name="jurialmunkey">
 		<reuselanguageinvoker>false</reuselanguageinvoker>
 		<summary lang="en">My Accounts Module</summary>
 		<description>Single placeholder for all your accounts.</description>
-		<platform>all</platform>
+		<platform>windows linux</platform>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.png</fanart>

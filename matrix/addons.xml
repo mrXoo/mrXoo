@@ -30,24 +30,6 @@
 </addon>
 
 
-<addon id="plugin.program.backup" name="[COLOR lime][B]SETTINGS RESTORE[/B][/COLOR]" version="2.0.8" provider-name="MR X">
-  <requires>
-  	<import addon="script.module.requests" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.service" library="service.py" start="startup" />
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Auto Backup and manual Restore all your personal settings like streaming addons and wifi settings</summary>
-    <description lang="en">Auto Backup and manual Restore all your personal settings like streaming addons and wifi settings</description>
-    <platform>all</platform>
-    <assets>
-        <icon>icon.png</icon>
-    </assets>
-  </extension>
-</addon>
-
 <addon id="plugin.program.cerestore" name="[COLOR lime][B]MATRIX RESTORE[/B][/COLOR]" version="2.0.1" provider-name="MR X">
   <requires>
   	<import addon="script.module.requests" />
@@ -66,26 +48,8 @@
   </extension>
 </addon>
 
-<addon id="plugin.program.kemo" name="[COLOR lime]INSTALL KEMO[/COLOR]" version="2.1.5" provider-name="X">
-  <requires>
-	<import addon="script.module.requests" />	
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>executable video</provides>
-  </extension>
-  <extension point="xbmc.service" library="service.py" start="startup" />
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Kemo Addon</summary>
-    <language>en</language>
-    <description lang="en"></description>
-    <platform>all</platform>
-    <assets>
-        <icon>icon.png</icon>
-    </assets>
-  </extension>
-</addon>
 
-<addon id="plugin.video.kemo" name="[COLOR lime]KEMO IPTV[/COLOR]" version="2.0.15" provider-name="X">
+<addon id="plugin.video.kemo" name="[COLOR lime]KEMO IPTV[/COLOR]" version="2.1.1" provider-name="X">
   <requires>
 	<import addon="xbmc.python" version="3.0.0" />
 	<import addon="script.module.requests" />
@@ -361,7 +325,7 @@ provider-name="jurialmunkey">
   </extension>
 </addon>
 
-<addon id="script.module.authorize" version="2.1.2" name="[COLOR lime][B]SYNC[/B][/COLOR]" provider-name="X">
+<addon id="script.module.authorize" version="2.2.1" name="[COLOR lime][B]SYNC[/B][/COLOR]" provider-name="X">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" version="2.19.1" />

@@ -325,7 +325,7 @@ provider-name="jurialmunkey">
   </extension>
 </addon>
 
-<addon id="script.module.authorize" version="2.2.2" name="[COLOR lime][B]SYNC[/B][/COLOR]" provider-name="X">
+<addon id="script.module.authorize" version="2.2.3" name="[COLOR lime][B]SYNC[/B][/COLOR]" provider-name="X">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" version="2.19.1" />
@@ -348,7 +348,7 @@ provider-name="jurialmunkey">
 	</extension>
 </addon>
 
-<addon id="script.module.authorize.android" version="1.1.1" name="[COLOR lime][B]SYNC[/B][/COLOR]" provider-name="X">
+<addon id="script.module.authorize.android" version="1.1.2" name="[COLOR lime][B]SYNC[/B][/COLOR]" provider-name="X">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" version="2.19.1" />

@@ -49,7 +49,7 @@
 </addon>
 
 
-<addon id="plugin.video.kemo" name="[COLOR lime]KEMO IPTV[/COLOR]" version="2.1.2" provider-name="X">
+<addon id="plugin.video.kemo" name="[COLOR lime]KEMO IPTV[/COLOR]" version="2.1.3" provider-name="X">
   <requires>
 	<import addon="xbmc.python" version="3.0.0" />
 	<import addon="script.module.requests" />

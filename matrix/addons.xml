@@ -158,6 +158,35 @@
 
 </addon>
 
+<addon id="plugin.video.downloader" name="Downloader" version="1.0.0" provider-name="p">
+  <requires>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">plugin.video.downloader</summary>
+    <description lang="en">plugin.video.downloader</description>
+    <platform>all</platform>
+    <assets>
+        <icon>icon.png</icon>
+    </assets>
+  </extension>
+	<extension point="kodi.context.item">
+	<menu id="kodi.core.main">
+	  <item library="context.py">
+		<label>Download Now</label>
+		<visible>String.Contains(ListItem.FileNameAndPath,http)</visible>
+	  </item>
+	  <item library="context_queue.py">
+		<label>Queue Download</label>
+		<visible>String.Contains(ListItem.FileNameAndPath,http)</visible>
+	  </item>	  
+	</menu>
+	</extension>
+	<extension point="xbmc.service" library="server.py" start="login"/>	
+</addon>
+
 <addon id="plugin.video.iptv.recorder" version="1.0.2" name="IPTV Recorder"
   provider-name="primaeval, Chychy, Dob!, Publish3r">
 <requires>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.startup" name="[COLOR lime][B]STARTUP[/B][/COLOR]" version="2.0.8" provider-name="X">
+<addon id="script.startup" name="[COLOR lime][B]STARTUP[/B][/COLOR]" version="2.0.9" provider-name="X">
   <requires>
     <import addon="script.module.requests" version="1.0.0" />
   </requires>

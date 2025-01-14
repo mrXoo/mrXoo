@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.repo.importer" name="[COLOR lime]Matrix Repo Importer[/COLOR]" version="2.0.8" provider-name="X">
+<addon id="script.repo.importer" name="[COLOR lime]Repo & Addon Importer[/COLOR]" version="3.0.4" provider-name="X">
   <requires>
+	<import addon="plugin.video.umbrella" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="service.py">
         <provides>executable</provides>
